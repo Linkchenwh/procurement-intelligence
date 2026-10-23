@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "perf_table",
   "position": {
-    "x": 24,
-    "y": 335,
-    "width": 1232,
-    "height": 240,
+    "x": 32,
+    "y": 324,
+    "width": 1376,
+    "height": 236,
     "z": 359,
     "tabOrder": 359
   },
@@ -28,7 +28,8 @@
                 }
               },
               "queryRef": "PerfSupplier.Supplier",
-              "nativeQueryRef": "Supplier"
+              "nativeQueryRef": "Supplier",
+              "displayName": "供应商"
             },
             {
               "field": {
@@ -42,7 +43,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Noncancelled Orders",
-              "nativeQueryRef": "Perf Noncancelled Orders"
+              "nativeQueryRef": "Perf Noncancelled Orders",
+              "displayName": "非取消订单"
             },
             {
               "field": {
@@ -56,7 +58,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Delivered Orders",
-              "nativeQueryRef": "Perf Delivered Orders"
+              "nativeQueryRef": "Perf Delivered Orders",
+              "displayName": "已交付订单"
             },
             {
               "field": {
@@ -70,7 +73,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Delivery Samples",
-              "nativeQueryRef": "Perf Delivery Samples"
+              "nativeQueryRef": "Perf Delivery Samples",
+              "displayName": "有效周期样本"
             },
             {
               "field": {
@@ -84,7 +88,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Delivery Days",
-              "nativeQueryRef": "Perf Delivery Days"
+              "nativeQueryRef": "Perf Delivery Days",
+              "displayName": "平均周期（天）"
             },
             {
               "field": {
@@ -98,7 +103,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Delivery Coverage",
-              "nativeQueryRef": "Perf Delivery Coverage"
+              "nativeQueryRef": "Perf Delivery Coverage",
+              "displayName": "周期覆盖率"
             },
             {
               "field": {
@@ -112,7 +118,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Recorded Compliance Rate",
-              "nativeQueryRef": "Perf Recorded Compliance Rate"
+              "nativeQueryRef": "Perf Recorded Compliance Rate",
+              "displayName": "合规标签Yes率"
             },
             {
               "field": {
@@ -126,7 +133,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Compliance Samples",
-              "nativeQueryRef": "Perf Compliance Samples"
+              "nativeQueryRef": "Perf Compliance Samples",
+              "displayName": "合规样本"
             },
             {
               "field": {
@@ -140,7 +148,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Quality Samples",
-              "nativeQueryRef": "Perf Quality Samples"
+              "nativeQueryRef": "Perf Quality Samples",
+              "displayName": "缺陷记录样本"
             },
             {
               "field": {
@@ -154,7 +163,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Quality Record Coverage",
-              "nativeQueryRef": "Perf Quality Record Coverage"
+              "nativeQueryRef": "Perf Quality Record Coverage",
+              "displayName": "缺陷记录覆盖率"
             }
           ]
         }
@@ -200,7 +210,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'观测指标与有效分母（不是整体优劣排名）'"
+                  "Value": "'供应商观测指标与有效样本'"
                 }
               }
             },
@@ -214,7 +224,279 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "selector": {
+            "metadata": "PerfSupplier.Supplier"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "150D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Noncancelled Orders"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Delivered Orders"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Delivery Samples"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "125D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Delivery Days"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Delivery Coverage"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Recorded Compliance Rate"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "140D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Compliance Samples"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Quality Samples"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "PerfFact.Perf Quality Record Coverage"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "150D"
                 }
               }
             }

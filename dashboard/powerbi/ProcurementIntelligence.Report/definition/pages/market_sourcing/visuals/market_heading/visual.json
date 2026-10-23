@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "market_heading",
   "position": {
-    "x": 24,
-    "y": 12,
-    "width": 1232,
-    "height": 40,
+    "x": 32,
+    "y": 16,
+    "width": 1376,
+    "height": 42,
     "z": 36,
     "tabOrder": 36
   },
@@ -38,6 +38,19 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "objects": {
@@ -51,7 +64,7 @@
                     "value": "市场对标与寻源：A4 / 80g / 500张",
                     "textStyle": {
                       "fontFamily": "SimSun",
-                      "fontSize": "20pt"
+                      "fontSize": "24pt"
                     }
                   }
                 ]

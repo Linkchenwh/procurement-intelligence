@@ -9,6 +9,7 @@ import shutil
 import uuid
 
 from src.data_loader import ROOT
+from scripts.style_powerbi_report import style_report
 from scripts.prepare_powerbi import write_project_root
 
 BASE = ROOT / "dashboard/powerbi"
@@ -251,6 +252,7 @@ def build():
     visual(p, "market_evidence", "tableEx", (646, 325, 610, 270), {"Values": [col("MarketQuotes", c) for c in ["brand", "price_per_500", "currency", "spec_comparable", "collected_at", "url"]]}, "来源、时间与可比性（链接可核对）")
     visual(p, "market_scenario", "tableEx", (24, 610, 1232, 215), {"Values": [col("MarketScenario", c) for c in ["product_name", "requested_reams", "purchase_units", "goods_reference_cost", "total_cost", "budget_difference", "limitations"]]}, "100包假设需求；参考货品金额不等于到货总成本")
     text(p, "market_footer", "情景表为独立的固定100包计算，不随品牌/币种筛选联动；数量/地区等参数在Streamlit调整后导出再刷新。未知成本保持空白。", 840)
+    style_report(REPORT)
     dump(ROOT / "outputs/tables/powerbi_build.json", {"tables": len(SCHEMAS), "relationships": len(relationships), "measures": sum(map(len, MEASURES.values())), "pages": 3, "status": "authored; awaiting actual Desktop refresh and DAX checks", "seed": "Desktop-created project backed up under outputs/logs/powerbi_desktop_seed"})
     print("Authored 10 tables, 6 relationships, 26 measures and 3 pages; Desktop verification required.")
 

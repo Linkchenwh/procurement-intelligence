@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "market_scope",
   "position": {
-    "x": 24,
-    "y": 56,
-    "width": 1232,
-    "height": 48,
+    "x": 32,
+    "y": 66,
+    "width": 1376,
+    "height": 40,
     "z": 80,
     "tabOrder": 80
   },
@@ -38,6 +38,19 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "objects": {
@@ -48,10 +61,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "2026-10-22单一销售渠道公开标价快照，非有效询价或成交价。税运费、MOQ和数量适用范围仍待核实。",
+                    "value": "2026-10-22单渠道公开标价快照；非有效询价或成交价，品牌不等于生产商或合同主体。",
                     "textStyle": {
                       "fontFamily": "SimSun",
-                      "fontSize": "13pt"
+                      "fontSize": "12pt"
                     }
                   }
                 ]

@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "market_evidence",
   "position": {
-    "x": 646,
-    "y": 325,
-    "width": 610,
-    "height": 270,
+    "x": 728,
+    "y": 324,
+    "width": 680,
+    "height": 308,
     "z": 971,
     "tabOrder": 971
   },
@@ -28,7 +28,8 @@
                 }
               },
               "queryRef": "MarketQuotes.brand",
-              "nativeQueryRef": "brand"
+              "nativeQueryRef": "brand",
+              "displayName": "品牌"
             },
             {
               "field": {
@@ -42,7 +43,8 @@
                 }
               },
               "queryRef": "MarketQuotes.price_per_500",
-              "nativeQueryRef": "price_per_500"
+              "nativeQueryRef": "price_per_500",
+              "displayName": "标价/500张"
             },
             {
               "field": {
@@ -56,7 +58,8 @@
                 }
               },
               "queryRef": "MarketQuotes.currency",
-              "nativeQueryRef": "currency"
+              "nativeQueryRef": "currency",
+              "displayName": "币种"
             },
             {
               "field": {
@@ -70,7 +73,8 @@
                 }
               },
               "queryRef": "MarketQuotes.spec_comparable",
-              "nativeQueryRef": "spec_comparable"
+              "nativeQueryRef": "spec_comparable",
+              "displayName": "规格可比"
             },
             {
               "field": {
@@ -84,7 +88,8 @@
                 }
               },
               "queryRef": "MarketQuotes.collected_at",
-              "nativeQueryRef": "collected_at"
+              "nativeQueryRef": "collected_at",
+              "displayName": "采集时间"
             },
             {
               "field": {
@@ -98,7 +103,8 @@
                 }
               },
               "queryRef": "MarketQuotes.url",
-              "nativeQueryRef": "url"
+              "nativeQueryRef": "url",
+              "displayName": "来源链接"
             }
           ]
         }
@@ -144,7 +150,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'来源、时间与可比性（链接可核对）'"
+                  "Value": "'来源与规格可比性'"
                 }
               }
             },
@@ -158,7 +164,223 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "selector": {
+            "metadata": "MarketQuotes.brand"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "92D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketQuotes.price_per_500"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketQuotes.currency"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "62D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketQuotes.spec_comparable"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketQuotes.collected_at"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "238D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketQuotes.url"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76D"
                 }
               }
             }

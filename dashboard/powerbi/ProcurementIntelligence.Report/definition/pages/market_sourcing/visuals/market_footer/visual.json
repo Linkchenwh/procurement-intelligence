@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "market_footer",
   "position": {
-    "x": 24,
-    "y": 840,
-    "width": 1232,
-    "height": 48,
+    "x": 32,
+    "y": 898,
+    "width": 1376,
+    "height": 58,
     "z": 864,
     "tabOrder": 864
   },
@@ -38,6 +38,19 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "objects": {
@@ -48,10 +61,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "情景表为独立的固定100包计算，不随品牌/币种筛选联动；数量/地区等参数在Streamlit调整后导出再刷新。未知成本保持空白。",
+                    "value": "税运费、MOQ、数量区间与地区条件未知时，到货总成本保持空白；不同币种不能直接比较。\n固定100包情景独立于品牌/币种筛选；动态数量在Streamlit调整后导出再刷新，完整来源与待核实条件见数据表。",
                     "textStyle": {
                       "fontFamily": "SimSun",
-                      "fontSize": "13pt"
+                      "fontSize": "11pt"
                     }
                   }
                 ]

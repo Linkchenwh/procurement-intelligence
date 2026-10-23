@@ -3,8 +3,8 @@
   "name": "spend_overview",
   "displayName": "采购支出总览",
   "displayOption": "FitToPage",
-  "height": 900,
-  "width": 1280,
+  "height": 960,
+  "width": 1440,
   "objects": {
     "outspacePane": [
       {

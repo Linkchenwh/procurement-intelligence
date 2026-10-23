@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "spend_card_0",
   "position": {
-    "x": 24,
-    "y": 105,
-    "width": 290,
-    "height": 105,
+    "x": 32,
+    "y": 116,
+    "width": 328,
+    "height": 96,
     "z": 129,
     "tabOrder": 129
   },
@@ -28,7 +28,9 @@
                 }
               },
               "queryRef": "GovFact.Gov Observed Amount",
-              "nativeQueryRef": "Gov Observed Amount"
+              "nativeQueryRef": "Gov Observed Amount",
+              "displayName": "保留观测金额",
+              "format": "#,0.00,,,"
             }
           ]
         }
@@ -74,7 +76,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'保留观测金额（源文件金额）'"
+                  "Value": "'保留观测金额（十亿，原币）'"
                 }
               }
             },
@@ -88,7 +90,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -110,14 +125,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "24D"
+                  "Value": "30D"
                 }
               }
             },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

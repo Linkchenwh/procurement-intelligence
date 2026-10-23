@@ -2,6 +2,8 @@
 
 原生项目为ProcurementIntelligence.pbip，包含采购支出总览、供应商绩效、市场对标与寻源三页。金额和订单指标按当前筛选上下文计算，未知值保持BLANK。
 
+当前版面使用中文表头、下拉筛选和1440×960画布；仅调整展示格式，模型与筛选口径未改。新布局尚待Desktop实际复核，README截图仍为此前已验证的基线版本。
+
 | 维表 | 事实表 | 关联键 |
 |---|---|---|
 | GovSupplier | GovFact | supplier_key |
@@ -31,3 +33,5 @@ GovFact.order_id为精确订单组合键的快照整数编码，避免文本大�
 只打开目标项目后，可通过scripts/query_powerbi.ps1执行dashboard/dax中的EVALUATE查询，输出到outputs/tables。该工具仅用于Windows Desktop本地只读查询。结果与Python控制表核对的方法和已验证指标见[验证说明](../../docs/validation.md)。
 
 build_powerbi_project用于重新生成定义，运行前关闭该项目。重建后仍需Desktop实际打开和刷新验证。部分Desktop版本的公开视觉JSON schema可能尚未提供，结构校验不能替代实际运行。
+
+仅重新应用版面格式时，可在项目关闭后运行 `python -m scripts.style_powerbi_report dashboard/powerbi/ProcurementIntelligence.Report/definition`；该脚本不修改模型度量、关系、绑定字段或筛选规则。

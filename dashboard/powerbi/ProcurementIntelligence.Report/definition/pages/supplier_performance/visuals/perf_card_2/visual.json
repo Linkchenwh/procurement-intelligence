@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "perf_card_2",
   "position": {
-    "x": 644,
-    "y": 105,
-    "width": 290,
-    "height": 105,
+    "x": 728,
+    "y": 116,
+    "width": 328,
+    "height": 96,
     "z": 749,
     "tabOrder": 749
   },
@@ -28,7 +28,8 @@
                 }
               },
               "queryRef": "PerfFact.Perf Delivery Coverage",
-              "nativeQueryRef": "Perf Delivery Coverage"
+              "nativeQueryRef": "Perf Delivery Coverage",
+              "displayName": "周期覆盖率"
             }
           ]
         }
@@ -74,7 +75,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'有效周期记录覆盖'"
+                  "Value": "'有效周期记录覆盖率'"
                 }
               }
             },
@@ -88,7 +89,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -110,14 +124,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "24D"
+                  "Value": "30D"
                 }
               }
             },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

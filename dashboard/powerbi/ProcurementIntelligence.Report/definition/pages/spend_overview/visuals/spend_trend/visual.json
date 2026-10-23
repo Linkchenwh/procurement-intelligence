@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "spend_trend",
   "position": {
-    "x": 646,
-    "y": 225,
+    "x": 688,
+    "y": 324,
     "z": 871,
-    "height": 275,
-    "width": 610,
+    "height": 228,
+    "width": 720,
     "tabOrder": 871
   },
   "visual": {
@@ -28,7 +28,8 @@
               },
               "queryRef": "GovDate.month",
               "nativeQueryRef": "month",
-              "active": true
+              "active": true,
+              "displayName": "月份"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "GovFact.Gov Observed Amount",
-              "nativeQueryRef": "Gov Observed Amount"
+              "nativeQueryRef": "Gov Observed Amount",
+              "displayName": "保留观测金额"
             }
           ]
         }
@@ -92,7 +94,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'有有效日期的月度金额（仅覆盖总额约29.6%）'"
+                  "Value": "'月度金额（有效日期覆盖约29.6%）'"
                 }
               }
             },
@@ -106,7 +108,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -114,7 +129,90 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   },
   "filterConfig": {
     "filters": [

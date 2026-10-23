@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "spend_scope",
   "position": {
-    "x": 24,
-    "y": 56,
-    "width": 1232,
-    "height": 48,
+    "x": 32,
+    "y": 66,
+    "width": 1376,
+    "height": 40,
     "z": 80,
     "tabOrder": 80
   },
@@ -38,6 +38,19 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "objects": {
@@ -48,10 +61,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "2012–2015财年；不是全州完整支出或付款。异常与疑似重复已隔离，三个案例之间不建业务关联。",
+                    "value": "2012–2015财年；保留335,550条历史观测，金额不等于付款。日期有效部分用于月度趋势。",
                     "textStyle": {
                       "fontFamily": "SimSun",
-                      "fontSize": "13pt"
+                      "fontSize": "12pt"
                     }
                   }
                 ]

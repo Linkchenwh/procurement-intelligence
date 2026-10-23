@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "perf_footer",
   "position": {
-    "x": 24,
-    "y": 835,
+    "x": 32,
+    "y": 898,
     "z": 859,
-    "height": 48,
-    "width": 1232,
+    "height": 58,
+    "width": 1376,
     "tabOrder": 859
   },
   "visual": {
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "全量数据基线有效周期491/560；68条已交付缺日期、1条先后异常。记录覆盖不是准时率或合格率；不发布正式缺陷率或已实现节约。",
+                    "value": "全量数据基线：有效周期491/560；68条已交付缺日期、1条先后异常。记录覆盖不等于准时率或合格率。\n企业来源未独立验证、币种未知；同品类仍需核实业务可比性，无收货分母不发布正式缺陷率，名义价差不称已实现节约。",
                     "textStyle": {
                       "fontFamily": "SimSun",
-                      "fontSize": "13pt"
+                      "fontSize": "11pt"
                     }
                   }
                 ]
@@ -47,6 +47,19 @@
         }
       ],
       "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
         {
           "properties": {
             "show": {

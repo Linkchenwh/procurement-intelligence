@@ -19,6 +19,8 @@
 
 [原生项目](dashboard/powerbi/ProcurementIntelligence.pbip) · [模型与刷新说明](dashboard/powerbi/README.md) · [验证记录](docs/validation.md)
 
+当前定义已统一中文表头、下拉筛选和页面布局。以下为已验证的基线截图；新布局尚待Desktop实际打开复核，截图将在复核后同步更新。
+
 ![采购支出总览](dashboard/screenshots/powerbi_spend_overview.png)
 
 ![供应商绩效](dashboard/screenshots/powerbi_supplier_performance.png)

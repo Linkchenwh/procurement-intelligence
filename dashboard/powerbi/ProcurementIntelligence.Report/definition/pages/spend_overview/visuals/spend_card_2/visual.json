@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "spend_card_2",
   "position": {
-    "x": 644,
-    "y": 105,
-    "width": 290,
-    "height": 105,
+    "x": 728,
+    "y": 116,
+    "width": 328,
+    "height": 96,
     "z": 749,
     "tabOrder": 749
   },
@@ -28,7 +28,8 @@
                 }
               },
               "queryRef": "GovFact.Gov Known Suppliers",
-              "nativeQueryRef": "Gov Known Suppliers"
+              "nativeQueryRef": "Gov Known Suppliers",
+              "displayName": "已知供应商编码数"
             }
           ]
         }
@@ -74,7 +75,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'已知供应商编码'"
+                  "Value": "'已知供应商编码数'"
                 }
               }
             },
@@ -88,7 +89,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -110,14 +124,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "24D"
+                  "Value": "30D"
                 }
               }
             },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "spend_supplier",
   "position": {
-    "x": 24,
-    "y": 515,
+    "x": 32,
+    "y": 576,
     "z": 539,
-    "height": 315,
-    "width": 910,
+    "height": 304,
+    "width": 1376,
     "tabOrder": 539
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "GovSupplier.supplier_key",
-              "nativeQueryRef": "supplier_key"
+              "nativeQueryRef": "supplier_key",
+              "displayName": "供应商编码"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "GovSupplier.supplier_label",
-              "nativeQueryRef": "supplier_label"
+              "nativeQueryRef": "supplier_label",
+              "displayName": "供应商名称"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "GovFact.Gov Observed Amount",
-              "nativeQueryRef": "Gov Observed Amount"
+              "nativeQueryRef": "Gov Observed Amount",
+              "displayName": "保留观测金额"
             }
           ]
         }
@@ -118,7 +121,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'供应商编码明细（按表头排序；UNKNOWN不是一家真实供应商）'"
+                  "Value": "'供应商金额 Top10（UNKNOWN为未识别桶）'"
                 }
               }
             },
@@ -132,7 +135,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -140,7 +156,168 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "selector": {
+            "metadata": "GovSupplier.supplier_key"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "GovSupplier.supplier_label"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "930D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "GovFact.Gov Observed Amount"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "300D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   },
   "filterConfig": {
     "filters": [

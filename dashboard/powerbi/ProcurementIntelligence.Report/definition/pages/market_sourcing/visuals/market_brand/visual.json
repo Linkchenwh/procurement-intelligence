@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "market_brand",
   "position": {
-    "x": 24,
-    "y": 220,
+    "x": 32,
+    "y": 228,
     "z": 244,
-    "height": 90,
-    "width": 600,
+    "height": 78,
+    "width": 660,
     "tabOrder": 244
   },
   "visual": {
@@ -28,7 +28,8 @@
               },
               "queryRef": "MarketQuotes.brand",
               "nativeQueryRef": "brand",
-              "active": true
+              "active": true,
+              "displayName": "品牌"
             }
           ]
         }
@@ -74,7 +75,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'品牌筛选（不等于生产商或合同主体）'"
+                  "Value": "'品牌筛选'"
                 }
               }
             },
@@ -88,7 +89,20 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -96,6 +110,54 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

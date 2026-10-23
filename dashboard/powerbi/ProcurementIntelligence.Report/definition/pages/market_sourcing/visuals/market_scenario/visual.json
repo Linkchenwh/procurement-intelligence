@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "market_scenario",
   "position": {
-    "x": 24,
-    "y": 610,
-    "width": 1232,
-    "height": 215,
+    "x": 32,
+    "y": 652,
+    "width": 1376,
+    "height": 232,
     "z": 634,
     "tabOrder": 634
   },
@@ -28,7 +28,8 @@
                 }
               },
               "queryRef": "MarketScenario.product_name",
-              "nativeQueryRef": "product_name"
+              "nativeQueryRef": "product_name",
+              "displayName": "商品"
             },
             {
               "field": {
@@ -42,7 +43,8 @@
                 }
               },
               "queryRef": "MarketScenario.requested_reams",
-              "nativeQueryRef": "requested_reams"
+              "nativeQueryRef": "requested_reams",
+              "displayName": "需求（包）"
             },
             {
               "field": {
@@ -56,7 +58,8 @@
                 }
               },
               "queryRef": "MarketScenario.purchase_units",
-              "nativeQueryRef": "purchase_units"
+              "nativeQueryRef": "purchase_units",
+              "displayName": "采购单位数"
             },
             {
               "field": {
@@ -70,7 +73,8 @@
                 }
               },
               "queryRef": "MarketScenario.goods_reference_cost",
-              "nativeQueryRef": "goods_reference_cost"
+              "nativeQueryRef": "goods_reference_cost",
+              "displayName": "货品参考金额"
             },
             {
               "field": {
@@ -84,7 +88,8 @@
                 }
               },
               "queryRef": "MarketScenario.total_cost",
-              "nativeQueryRef": "total_cost"
+              "nativeQueryRef": "total_cost",
+              "displayName": "到货总成本"
             },
             {
               "field": {
@@ -98,7 +103,8 @@
                 }
               },
               "queryRef": "MarketScenario.budget_difference",
-              "nativeQueryRef": "budget_difference"
+              "nativeQueryRef": "budget_difference",
+              "displayName": "预算差额"
             },
             {
               "field": {
@@ -112,7 +118,8 @@
                 }
               },
               "queryRef": "MarketScenario.limitations",
-              "nativeQueryRef": "limitations"
+              "nativeQueryRef": "limitations",
+              "displayName": "待核实条件"
             }
           ]
         }
@@ -158,7 +165,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'100包假设需求；参考货品金额不等于到货总成本'"
+                  "Value": "'固定100包情景：货品参考金额与到货总成本分列'"
                 }
               }
             },
@@ -172,7 +179,237 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "urlIcon": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "selector": {
+            "metadata": "MarketScenario.product_name"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "360D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.requested_reams"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.purchase_units"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.goods_reference_cost"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "150D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.total_cost"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.budget_difference"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "MarketScenario.limitations"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "390D"
                 }
               }
             }
