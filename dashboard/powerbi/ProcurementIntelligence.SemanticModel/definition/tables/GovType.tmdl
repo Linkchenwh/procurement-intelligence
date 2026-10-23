@@ -1,0 +1,22 @@
+table GovType
+	lineageTag: 5eb1f88a-4211-5d26-8de0-92414cec305c
+
+	column acquisition_type
+		dataType: string
+		lineageTag: cc04166d-5dba-5511-bf58-0d78a8169683
+		summarizeBy: none
+		sourceColumn: acquisition_type
+
+	partition GovType = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\GovType.csv"), [Delimiter=",", Columns=1, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"acquisition_type", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,2 @@
+expression ProjectRoot = "D:\procurement-intelligence" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+

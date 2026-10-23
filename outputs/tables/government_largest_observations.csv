@@ -1,0 +1,6 @@
+﻿source_row,supplier_label,Department Name,amount,source_domain,amount_scope
+8770,Delta Dental of California,"Health Care Services, Department of",7337038064.0,california_history,accepted_observation_subset_not_statewide_total
+303556,L.A. Care Health Plan,"Health Care Services, Department of",3194190000.0,california_history,accepted_observation_subset_not_statewide_total
+290944,County of Los Angeles,"Health Care Services, Department of",3010052803.0,california_history,accepted_observation_subset_not_statewide_total
+313630,"Health Net Community Solutions, Inc.","Health Care Services, Department of",2474118000.0,california_history,accepted_observation_subset_not_statewide_total
+279496,"Health Net Community Solutions, Inc.","Health Care Services, Department of",2253227000.0,california_history,accepted_observation_subset_not_statewide_total

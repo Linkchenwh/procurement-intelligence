@@ -1,0 +1,284 @@
+﻿source_record,PO_ID,Supplier,Order_Date,Delivery_Date,Item_Category,Order_Status,Quantity,Unit_Price,Negotiated_Price,Defective_Units,Compliance,issue_codes,source_domain
+2,PO-00001,Alpha_Inc,2023-10-17,2023-10-25,Office Supplies,Cancelled,1176,20.13,17.81,,Yes,non_delivered_with_date,performance_practice
+10,PO-00009,Gamma_Co,2023-11-24,2023-11-28,Raw Materials,Partially Delivered,1688,43.93,39.89,89.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+11,PO-00010,Gamma_Co,2023-07-13,2023-07-25,Raw Materials,Pending,171,76.87,70.2,8.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+14,PO-00013,Beta_Supplies,2023-03-09,2023-03-26,Electronics,Pending,5000,86.74,74.86,51.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+15,PO-00014,Beta_Supplies,2022-02-02,,MRO,Delivered,5000,18.3,16.88,,Yes,delivered_missing_date,performance_practice
+16,PO-00015,Delta_Logistics,2022-01-31,2022-02-18,Electronics,Pending,5000,54.5,48.45,22.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+20,PO-00019,Gamma_Co,2023-06-02,2023-06-05,Raw Materials,Partially Delivered,1737,97.53,87.37,79.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+22,PO-00021,Epsilon_Group,2022-01-28,2022-02-12,Electronics,Cancelled,1735,20.54,19.69,49.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+25,PO-00024,Beta_Supplies,2023-10-28,2023-11-03,Office Supplies,Partially Delivered,393,72.53,66.31,42.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+31,PO-00030,Epsilon_Group,2023-08-27,,MRO,Delivered,1005,80.55,73.31,30.0,Yes,delivered_missing_date,performance_practice
+38,PO-00037,Epsilon_Group,2022-10-12,2022-10-31,Office Supplies,Pending,797,99.54,91.37,18.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+39,PO-00038,Beta_Supplies,2022-06-09,2022-06-27,Office Supplies,Pending,906,101.21,90.9,94.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+41,PO-00040,Epsilon_Group,2022-12-11,,Office Supplies,Delivered,524,46.28,39.65,14.0,Yes,delivered_missing_date,performance_practice
+47,PO-00046,Alpha_Inc,2022-12-19,,Electronics,Delivered,1025,21.11,19.25,15.0,Yes,delivered_missing_date,performance_practice
+50,PO-00049,Delta_Logistics,2022-02-14,2022-03-05,Office Supplies,Pending,1007,52.44,46.06,167.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+51,PO-00050,Alpha_Inc,2023-04-16,,MRO,Pending,736,16.2,15.33,18.0,Yes,non_delivered_with_defect_record,performance_practice
+53,PO-00052,Delta_Logistics,2022-05-08,,Office Supplies,Delivered,612,20.99,19.75,102.0,Yes,delivered_missing_date,performance_practice
+54,PO-00053,Alpha_Inc,2023-01-23,2023-02-02,MRO,Pending,1949,72.53,63.26,48.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+55,PO-00054,Delta_Logistics,2022-03-22,2022-03-28,Office Supplies,Cancelled,1640,77.92,76.41,262.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+58,PO-00057,Delta_Logistics,2023-10-06,,Packaging,Delivered,1578,48.33,42.77,206.0,Yes,delivered_missing_date,performance_practice
+60,PO-00059,Epsilon_Group,2023-01-06,2023-01-22,MRO,Pending,1558,93.46,91.27,39.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+63,PO-00062,Delta_Logistics,2023-12-23,2024-01-03,MRO,Partially Delivered,70,12.37,11.04,10.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+67,PO-00066,Gamma_Co,2022-08-22,2022-08-25,Office Supplies,Partially Delivered,437,59.51,56.45,25.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+72,PO-00071,Alpha_Inc,2023-01-25,2023-02-08,MRO,Cancelled,826,60.5,57.18,18.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+73,PO-00072,Delta_Logistics,2022-10-12,2022-11-01,Electronics,Pending,1419,69.64,59.28,194.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+80,PO-00079,Alpha_Inc,2022-08-03,,MRO,Delivered,1528,36.52,33.0,31.0,No,delivered_missing_date,performance_practice
+84,PO-00083,Beta_Supplies,2023-12-01,2023-12-07,Electronics,Cancelled,84,73.38,71.42,9.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+89,PO-00088,Delta_Logistics,2022-06-25,2022-07-10,MRO,Partially Delivered,1461,64.09,63.39,228.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+91,PO-00090,Alpha_Inc,2022-09-08,,Packaging,Delivered,1071,101.6,93.91,25.0,Yes,delivered_missing_date,performance_practice
+92,PO-00091,Epsilon_Group,2022-06-17,2022-07-06,Packaging,Pending,1463,101.23,86.17,43.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+95,PO-00094,Alpha_Inc,2022-10-04,2022-10-09,Electronics,Partially Delivered,1845,39.56,37.63,45.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+96,PO-00095,Beta_Supplies,2023-10-18,,Electronics,Cancelled,1895,91.98,86.27,170.0,Yes,non_delivered_with_defect_record,performance_practice
+97,PO-00096,Epsilon_Group,2023-12-06,2023-12-09,MRO,Partially Delivered,1550,79.86,69.57,32.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+100,PO-00099,Beta_Supplies,2023-12-03,,Office Supplies,Delivered,779,93.69,90.92,66.0,Yes,delivered_missing_date,performance_practice
+101,PO-00100,Beta_Supplies,2022-11-29,2022-12-14,MRO,Pending,1629,100.26,86.44,187.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+102,PO-00101,Alpha_Inc,2022-02-27,2022-02-22,Office Supplies,Delivered,211,75.69,65.4,2.0,Yes,delivery_before_order,performance_practice
+103,PO-00102,Alpha_Inc,2022-08-23,,Office Supplies,Delivered,251,67.49,64.48,2.0,Yes,delivered_missing_date,performance_practice
+106,PO-00105,Epsilon_Group,2023-02-15,2023-03-01,Office Supplies,Partially Delivered,1936,93.66,92.24,58.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+107,PO-00106,Delta_Logistics,2022-10-02,2022-10-22,MRO,Cancelled,865,14.7,13.14,135.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+109,PO-00108,Delta_Logistics,2022-08-05,2022-08-24,Raw Materials,Pending,505,45.42,40.37,62.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+111,PO-00110,Beta_Supplies,2022-11-19,,Office Supplies,Delivered,1800,103.8,96.27,166.0,Yes,delivered_missing_date,performance_practice
+112,PO-00111,Delta_Logistics,2022-08-06,2022-08-15,Raw Materials,Pending,1325,24.36,22.75,206.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+115,PO-00114,Gamma_Co,2023-02-10,,Raw Materials,Partially Delivered,345,103.62,98.09,25.0,No,non_delivered_with_defect_record,performance_practice
+118,PO-00117,Alpha_Inc,2022-05-27,,Packaging,Delivered,1822,53.23,47.49,39.0,Yes,delivered_missing_date,performance_practice
+121,PO-00120,Alpha_Inc,2022-09-10,2022-09-21,Packaging,Partially Delivered,1126,15.68,14.97,27.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+122,PO-00121,Beta_Supplies,2023-07-29,2023-08-14,Raw Materials,Cancelled,841,95.73,85.33,81.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+125,PO-00124,Alpha_Inc,2023-08-22,2023-08-25,Raw Materials,Cancelled,813,109.17,107.39,14.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+127,PO-00126,Alpha_Inc,2023-08-21,2023-09-03,Office Supplies,Cancelled,429,86.73,75.09,9.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+134,PO-00133,Delta_Logistics,2022-04-04,2022-04-22,Electronics,Cancelled,1930,65.52,56.9,282.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+135,PO-00134,Beta_Supplies,2022-02-18,2022-02-28,Office Supplies,Pending,1912,30.73,29.82,191.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+141,PO-00140,Gamma_Co,2023-03-09,2023-03-13,MRO,Partially Delivered,1136,60.81,58.25,62.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+147,PO-00146,Gamma_Co,2023-04-25,,Electronics,Pending,468,95.57,91.8,24.0,Yes,non_delivered_with_defect_record,performance_practice
+150,PO-00149,Beta_Supplies,2023-07-21,,Packaging,Delivered,1846,13.72,12.62,216.0,Yes,delivered_missing_date,performance_practice
+154,PO-00153,Gamma_Co,2023-11-30,2023-12-17,Electronics,Pending,90,32.38,29.96,7.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+158,PO-00157,Epsilon_Group,2022-12-15,,Packaging,Cancelled,1913,66.56,61.34,61.0,Yes,non_delivered_with_defect_record,performance_practice
+161,PO-00160,Epsilon_Group,2023-03-22,2023-04-09,Electronics,Partially Delivered,1106,97.77,90.45,31.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+162,PO-00161,Delta_Logistics,2022-06-11,2022-06-24,Office Supplies,Pending,1121,42.38,38.34,152.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+166,PO-00165,Epsilon_Group,2023-05-28,2023-06-11,Electronics,Pending,1801,71.27,61.24,43.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+176,PO-00175,Beta_Supplies,2022-06-06,2022-06-11,Office Supplies,Pending,1535,40.58,38.71,165.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+179,PO-00178,Beta_Supplies,2023-07-07,2023-07-18,Office Supplies,Cancelled,1078,18.34,17.41,102.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+184,PO-00183,Delta_Logistics,2023-05-16,2023-05-24,Packaging,Partially Delivered,920,73.09,70.14,,Yes,non_delivered_with_date,performance_practice
+185,PO-00184,Epsilon_Group,2022-01-20,2022-01-30,Packaging,Partially Delivered,844,26.37,25.08,38.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+186,PO-00185,Epsilon_Group,2022-04-25,,MRO,Delivered,442,41.73,36.45,15.0,Yes,delivered_missing_date,performance_practice
+187,PO-00186,Beta_Supplies,2023-01-07,2023-01-21,Electronics,Cancelled,256,96.15,83.44,26.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+188,PO-00187,Delta_Logistics,2022-11-11,,MRO,Partially Delivered,1088,55.29,53.04,161.0,No,non_delivered_with_defect_record,performance_practice
+191,PO-00190,Beta_Supplies,2022-09-04,,Packaging,Delivered,941,28.4,27.21,,No,delivered_missing_date,performance_practice
+196,PO-00195,Alpha_Inc,2022-03-12,2022-03-18,Packaging,Cancelled,792,18.16,17.25,17.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+197,PO-00196,Epsilon_Group,2023-06-30,2023-07-03,Office Supplies,Partially Delivered,1314,22.63,21.06,44.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+200,PO-00199,Gamma_Co,2023-11-07,2023-11-26,Raw Materials,Partially Delivered,145,47.49,42.76,6.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+205,PO-00204,Alpha_Inc,2023-06-25,,Office Supplies,Delivered,280,72.16,62.38,100.0,Yes,delivered_missing_date,performance_practice
+206,PO-00205,Beta_Supplies,2023-09-14,2023-09-20,Office Supplies,Cancelled,798,19.09,17.76,100.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+208,PO-00207,Epsilon_Group,2022-08-05,,MRO,Delivered,1244,96.13,84.78,43.0,Yes,delivered_missing_date,performance_practice
+212,PO-00211,Gamma_Co,2024-01-01,,Office Supplies,Delivered,1233,86.62,76.59,65.0,Yes,delivered_missing_date,performance_practice
+216,PO-00215,Beta_Supplies,2023-10-28,,Office Supplies,Delivered,1159,59.24,58.08,,Yes,delivered_missing_date,performance_practice
+219,PO-00218,Beta_Supplies,2023-06-14,2023-06-16,Raw Materials,Pending,731,56.02,54.78,70.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+220,PO-00219,Epsilon_Group,2023-04-08,,Office Supplies,Cancelled,606,83.07,79.22,16.0,Yes,non_delivered_with_defect_record,performance_practice
+227,PO-00226,Delta_Logistics,2023-08-26,2023-09-10,Office Supplies,Cancelled,1629,21.51,19.41,250.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+230,PO-00229,Gamma_Co,2023-08-26,,Raw Materials,Delivered,1404,34.85,30.5,78.0,Yes,delivered_missing_date,performance_practice
+236,PO-00235,Delta_Logistics,2022-03-02,,Raw Materials,Delivered,239,39.87,35.47,32.0,Yes,delivered_missing_date,performance_practice
+237,PO-00236,Alpha_Inc,2022-08-23,,Office Supplies,Delivered,1298,21.51,20.83,,Yes,delivered_missing_date,performance_practice
+238,PO-00237,Delta_Logistics,2022-03-11,,MRO,Delivered,1458,91.05,81.56,220.0,Yes,delivered_missing_date,performance_practice
+241,PO-00240,Gamma_Co,2022-03-14,,Packaging,Delivered,682,81.84,71.86,40.0,Yes,delivered_missing_date,performance_practice
+244,PO-00243,Alpha_Inc,2022-10-13,,Raw Materials,Delivered,1818,60.96,57.13,41.0,Yes,delivered_missing_date,performance_practice
+247,PO-00246,Beta_Supplies,2022-08-08,2022-08-26,Packaging,Pending,759,50.56,46.47,63.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+251,PO-00250,Epsilon_Group,2023-08-14,2023-08-22,Packaging,Pending,367,74.61,71.36,13.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+252,PO-00251,Epsilon_Group,2023-04-30,2023-05-20,Office Supplies,Partially Delivered,1750,65.97,58.34,50.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+253,PO-00252,Delta_Logistics,2022-09-06,2022-09-24,Office Supplies,Partially Delivered,1298,43.73,37.21,,No,non_delivered_with_date,performance_practice
+257,PO-00256,Gamma_Co,2022-04-07,,Packaging,Delivered,713,19.45,18.82,31.0,Yes,delivered_missing_date,performance_practice
+259,PO-00258,Delta_Logistics,2023-11-06,2023-11-08,MRO,Cancelled,1447,35.67,35.07,224.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+260,PO-00259,Epsilon_Group,2023-03-18,,Office Supplies,Delivered,1745,26.17,22.25,55.0,Yes,delivered_missing_date,performance_practice
+265,PO-00264,Gamma_Co,2022-02-25,2022-03-15,Packaging,Cancelled,1186,17.31,16.0,64.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+269,PO-00268,Beta_Supplies,2022-04-11,2022-04-20,Electronics,Partially Delivered,613,20.38,20.17,58.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+270,PO-00269,Gamma_Co,2022-03-04,2022-03-16,Raw Materials,Partially Delivered,1341,46.27,43.94,63.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+271,PO-00270,Beta_Supplies,2023-02-17,2023-03-04,MRO,Partially Delivered,1583,103.57,89.38,164.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+272,PO-00271,Beta_Supplies,2022-12-14,,Raw Materials,Cancelled,1880,92.73,90.78,173.0,Yes,non_delivered_with_defect_record,performance_practice
+274,PO-00273,Delta_Logistics,2022-09-12,,Office Supplies,Delivered,1460,34.54,31.87,208.0,No,delivered_missing_date,performance_practice
+275,PO-00274,Beta_Supplies,2022-07-16,2022-07-28,Packaging,Partially Delivered,1186,26.14,24.78,112.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+276,PO-00275,Epsilon_Group,2022-07-14,2022-07-23,MRO,Pending,1686,72.28,65.21,53.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+278,PO-00277,Epsilon_Group,2023-04-05,,Electronics,Delivered,1001,64.62,55.7,32.0,Yes,delivered_missing_date,performance_practice
+280,PO-00279,Alpha_Inc,2023-03-09,2023-03-29,Packaging,Cancelled,748,37.66,32.71,,No,non_delivered_with_date,performance_practice
+281,PO-00280,Alpha_Inc,2022-07-07,,Office Supplies,Delivered,162,81.63,78.76,2.0,Yes,delivered_missing_date,performance_practice
+285,PO-00284,Beta_Supplies,2022-03-19,2022-04-06,Electronics,Pending,1639,56.24,55.4,147.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+291,PO-00290,Delta_Logistics,2023-07-08,,Raw Materials,Partially Delivered,1711,26.04,24.81,290.0,Yes,non_delivered_with_defect_record,performance_practice
+298,PO-00297,Alpha_Inc,2023-05-08,2023-05-22,Office Supplies,Partially Delivered,1489,107.02,93.3,,Yes,non_delivered_with_date,performance_practice
+301,PO-00300,Epsilon_Group,2022-03-02,2022-03-06,Raw Materials,Pending,1512,33.25,30.15,53.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+303,PO-00302,Alpha_Inc,2023-01-24,,Electronics,Cancelled,1257,83.13,81.89,30.0,Yes,non_delivered_with_defect_record,performance_practice
+305,PO-00304,Epsilon_Group,2023-02-04,2023-02-05,Packaging,Pending,450,55.85,49.88,9.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+312,PO-00311,Beta_Supplies,2023-11-09,2023-11-18,Packaging,Pending,247,84.11,71.97,,Yes,non_delivered_with_date,performance_practice
+320,PO-00319,Epsilon_Group,2023-07-10,2023-07-17,Packaging,Partially Delivered,1197,88.92,78.82,31.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+322,PO-00321,Gamma_Co,2022-11-18,2022-12-03,Raw Materials,Partially Delivered,1399,25.97,22.19,62.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+326,PO-00325,Gamma_Co,2023-05-04,,Electronics,Delivered,709,61.64,54.55,41.0,Yes,delivered_missing_date,performance_practice
+330,PO-00329,Beta_Supplies,2022-02-28,2022-03-12,Raw Materials,Pending,1419,83.91,71.46,137.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+332,PO-00331,Gamma_Co,2022-03-24,2022-04-11,MRO,Pending,196,44.36,43.81,6.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+336,PO-00335,Delta_Logistics,2022-03-11,,Raw Materials,Delivered,1893,55.8,52.35,,Yes,delivered_missing_date,performance_practice
+337,PO-00336,Delta_Logistics,2023-11-23,2023-12-05,Electronics,Pending,538,34.3,32.25,84.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+338,PO-00337,Delta_Logistics,2022-08-29,2022-09-15,Office Supplies,Pending,978,94.15,87.7,149.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+339,PO-00338,Epsilon_Group,2023-02-18,2023-03-06,Raw Materials,Cancelled,1713,47.45,42.05,53.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+340,PO-00339,Delta_Logistics,2022-05-03,2022-05-07,Raw Materials,Pending,600,60.1,57.92,95.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+341,PO-00340,Alpha_Inc,2023-08-07,2023-08-25,Electronics,Pending,387,100.28,85.54,5.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+342,PO-00341,Alpha_Inc,2022-09-10,2022-09-19,MRO,Pending,921,68.83,59.13,22.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+344,PO-00343,Alpha_Inc,2023-09-01,2023-09-21,Office Supplies,Cancelled,1852,104.04,94.89,36.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+349,PO-00348,Alpha_Inc,2023-11-05,,Office Supplies,Delivered,1684,73.05,62.53,,Yes,delivered_missing_date,performance_practice
+351,PO-00350,Alpha_Inc,2023-08-02,2023-08-21,Packaging,Cancelled,1837,99.04,86.51,39.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+354,PO-00353,Epsilon_Group,2022-09-25,2022-10-12,Electronics,Cancelled,673,39.58,35.83,25.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+355,PO-00354,Delta_Logistics,2022-07-29,2022-08-12,Office Supplies,Cancelled,1066,33.33,28.47,162.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+360,PO-00359,Epsilon_Group,2023-02-10,2023-03-02,Raw Materials,Partially Delivered,1377,94.69,84.2,,Yes,non_delivered_with_date,performance_practice
+361,PO-00360,Epsilon_Group,2022-05-15,2022-05-18,Packaging,Cancelled,303,41.6,40.51,11.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+363,PO-00362,Beta_Supplies,2023-10-23,2023-11-07,Raw Materials,Cancelled,502,22.05,20.65,50.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+367,PO-00366,Epsilon_Group,2022-03-16,2022-04-04,Packaging,Partially Delivered,58,82.57,76.55,,Yes,non_delivered_with_date,performance_practice
+370,PO-00369,Alpha_Inc,2023-09-29,,Packaging,Delivered,1732,82.5,71.71,24.0,Yes,delivered_missing_date,performance_practice
+374,PO-00373,Beta_Supplies,2023-07-05,2023-07-09,Electronics,Partially Delivered,453,64.14,60.18,51.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+378,PO-00377,Gamma_Co,2022-05-16,2022-05-28,Office Supplies,Partially Delivered,1746,93.6,89.81,85.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+381,PO-00380,Alpha_Inc,2022-09-08,,Office Supplies,Pending,636,53.64,49.23,18.0,Yes,non_delivered_with_defect_record,performance_practice
+385,PO-00384,Alpha_Inc,2023-03-25,2023-04-07,Packaging,Cancelled,153,59.42,52.0,3.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+386,PO-00385,Delta_Logistics,2023-07-11,2023-07-22,Raw Materials,Cancelled,1925,70.88,63.41,292.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+391,PO-00390,Epsilon_Group,2023-06-26,2023-06-29,Electronics,Pending,1546,78.88,78.0,38.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+397,PO-00396,Delta_Logistics,2022-04-17,,Electronics,Delivered,927,48.89,46.05,138.0,Yes,delivered_missing_date,performance_practice
+398,PO-00397,Delta_Logistics,2022-05-18,2022-05-23,Raw Materials,Cancelled,387,77.81,69.04,67.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+400,PO-00399,Gamma_Co,2022-04-29,2022-05-05,MRO,Pending,871,94.7,92.66,46.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+404,PO-00403,Beta_Supplies,2022-10-06,2022-10-21,Electronics,Cancelled,1754,89.35,86.54,161.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+407,PO-00406,Alpha_Inc,2022-08-04,2022-08-15,MRO,Partially Delivered,850,91.38,88.41,24.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+413,PO-00412,Gamma_Co,2023-06-02,2023-06-04,Packaging,Pending,1969,89.25,87.28,108.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+414,PO-00413,Beta_Supplies,2023-05-16,2023-05-26,Packaging,Partially Delivered,1465,11.25,9.61,151.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+415,PO-00414,Delta_Logistics,2022-09-15,2022-09-18,Packaging,Pending,1208,41.62,39.46,,Yes,non_delivered_with_date,performance_practice
+418,PO-00417,Gamma_Co,2023-10-12,2023-10-14,Electronics,Partially Delivered,689,102.53,95.23,38.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+423,PO-00422,Gamma_Co,2022-12-08,2022-12-19,MRO,Pending,1956,31.88,28.48,86.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+424,PO-00423,Delta_Logistics,2022-05-14,,Electronics,Delivered,519,51.73,47.52,81.0,No,delivered_missing_date,performance_practice
+425,PO-00424,Gamma_Co,2023-10-15,2023-10-21,MRO,Partially Delivered,1448,25.06,21.62,84.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+427,PO-00426,Alpha_Inc,2022-06-15,,MRO,Delivered,799,56.22,49.51,18.0,Yes,delivered_missing_date,performance_practice
+428,PO-00427,Beta_Supplies,2023-03-29,2023-04-18,MRO,Partially Delivered,1743,51.04,47.15,160.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+430,PO-00429,Beta_Supplies,2023-12-24,,Raw Materials,Delivered,279,47.52,46.5,28.0,No,delivered_missing_date,performance_practice
+432,PO-00431,Delta_Logistics,2023-07-29,2023-07-31,Office Supplies,Partially Delivered,612,72.93,63.32,99.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+433,PO-00432,Epsilon_Group,2022-01-10,2022-01-21,Packaging,Pending,487,11.18,10.63,15.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+434,PO-00433,Epsilon_Group,2022-04-25,2022-04-29,Packaging,Partially Delivered,1849,70.76,69.25,51.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+435,PO-00434,Epsilon_Group,2022-03-19,2022-04-01,MRO,Partially Delivered,1356,26.28,25.44,47.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+437,PO-00436,Alpha_Inc,2022-06-02,2022-06-13,Packaging,Partially Delivered,275,23.96,20.44,,Yes,non_delivered_with_date,performance_practice
+439,PO-00438,Alpha_Inc,2022-02-06,,MRO,Delivered,847,17.77,17.39,,Yes,delivered_missing_date,performance_practice
+442,PO-00441,Alpha_Inc,2023-07-20,2023-08-02,Electronics,Cancelled,928,69.31,67.26,20.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+443,PO-00442,Epsilon_Group,2022-06-01,2022-06-12,MRO,Partially Delivered,1009,16.44,16.18,,Yes,non_delivered_with_date,performance_practice
+444,PO-00443,Epsilon_Group,2023-03-17,2023-04-03,Electronics,Pending,1554,82.92,74.82,44.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+445,PO-00444,Gamma_Co,2022-05-11,2022-05-25,Packaging,Partially Delivered,502,29.47,28.94,27.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+447,PO-00446,Alpha_Inc,2022-11-12,2022-11-18,MRO,Pending,1902,29.89,25.83,41.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+448,PO-00447,Gamma_Co,2023-01-09,,Raw Materials,Pending,865,28.79,25.69,47.0,Yes,non_delivered_with_defect_record,performance_practice
+449,PO-00448,Delta_Logistics,2022-02-10,2022-02-26,Packaging,Partially Delivered,708,13.36,11.61,,No,non_delivered_with_date,performance_practice
+463,PO-00462,Delta_Logistics,2022-07-01,,MRO,Delivered,148,44.91,40.1,,No,delivered_missing_date,performance_practice
+464,PO-00463,Beta_Supplies,2023-02-27,2023-03-14,MRO,Pending,1965,36.6,34.64,195.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+465,PO-00464,Alpha_Inc,2022-01-26,2022-02-03,Office Supplies,Pending,1818,67.96,58.98,,Yes,non_delivered_with_date,performance_practice
+467,PO-00466,Delta_Logistics,2022-12-07,,Raw Materials,Delivered,329,12.96,12.74,48.0,Yes,delivered_missing_date,performance_practice
+468,PO-00467,Gamma_Co,2023-02-26,2023-03-17,Office Supplies,Cancelled,1422,25.62,25.18,65.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+469,PO-00468,Delta_Logistics,2023-11-17,,Raw Materials,Delivered,546,82.63,74.77,76.0,No,delivered_missing_date,performance_practice
+470,PO-00469,Gamma_Co,2022-09-12,2022-09-22,Office Supplies,Partially Delivered,351,72.08,71.3,20.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+471,PO-00470,Delta_Logistics,2022-10-01,2022-10-18,Raw Materials,Partially Delivered,230,13.0,12.81,,No,non_delivered_with_date,performance_practice
+477,PO-00476,Epsilon_Group,2023-04-27,,Office Supplies,Delivered,240,88.14,81.9,4.0,Yes,delivered_missing_date,performance_practice
+479,PO-00478,Beta_Supplies,2022-07-24,2022-08-03,MRO,Pending,1030,70.81,61.58,,No,non_delivered_with_date,performance_practice
+485,PO-00484,Delta_Logistics,2022-01-25,,Electronics,Delivered,67,84.72,73.06,9.0,Yes,delivered_missing_date,performance_practice
+488,PO-00487,Delta_Logistics,2023-02-13,2023-02-16,Electronics,Cancelled,615,30.3,29.52,96.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+489,PO-00488,Gamma_Co,2022-12-03,2022-12-04,Office Supplies,Pending,619,38.38,35.02,34.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+493,PO-00492,Epsilon_Group,2022-12-26,2023-01-11,Office Supplies,Pending,1865,30.29,26.83,56.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+494,PO-00493,Beta_Supplies,2023-10-19,2023-10-24,Electronics,Cancelled,675,13.69,11.84,52.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+495,PO-00494,Gamma_Co,2023-06-06,2023-06-22,MRO,Pending,1361,28.57,24.29,65.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+497,PO-00496,Epsilon_Group,2023-11-27,,Packaging,Cancelled,1736,53.2,50.68,48.0,Yes,non_delivered_with_defect_record,performance_practice
+500,PO-00499,Gamma_Co,2022-01-29,,Office Supplies,Delivered,204,40.76,37.46,10.0,Yes,delivered_missing_date,performance_practice
+501,PO-00500,Beta_Supplies,2022-04-29,2022-05-13,Electronics,Partially Delivered,539,33.85,30.57,34.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+504,PO-00503,Gamma_Co,2023-08-18,2023-09-01,Packaging,Partially Delivered,1177,37.37,34.27,60.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+513,PO-00512,Alpha_Inc,2023-09-13,2023-09-19,Raw Materials,Partially Delivered,587,96.98,95.35,14.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+515,PO-00514,Beta_Supplies,2022-04-29,2022-05-11,Office Supplies,Cancelled,1891,91.87,80.28,158.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+518,PO-00517,Beta_Supplies,2022-07-14,2022-07-27,Office Supplies,Cancelled,574,12.38,11.47,,No,non_delivered_with_date,performance_practice
+522,PO-00521,Beta_Supplies,2023-03-23,2023-03-26,Raw Materials,Pending,1898,35.53,33.25,187.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+524,PO-00523,Gamma_Co,2023-06-17,2023-06-28,Packaging,Pending,734,92.38,78.92,34.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+528,PO-00527,Beta_Supplies,2022-07-21,,Packaging,Delivered,561,35.54,30.99,68.0,No,delivered_missing_date,performance_practice
+533,PO-00532,Delta_Logistics,2022-12-05,2022-12-12,Office Supplies,Partially Delivered,520,36.57,34.78,67.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+535,PO-00534,Alpha_Inc,2022-11-18,,Raw Materials,Delivered,1165,72.06,63.93,,Yes,delivered_missing_date,performance_practice
+536,PO-00535,Delta_Logistics,2023-11-11,2023-11-29,Packaging,Pending,1427,93.99,83.6,213.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+538,PO-00537,Delta_Logistics,2022-11-04,2022-11-11,Packaging,Partially Delivered,1873,11.54,9.89,284.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+545,PO-00544,Alpha_Inc,2023-12-15,2023-12-31,Packaging,Partially Delivered,1263,28.75,27.1,26.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+546,PO-00545,Gamma_Co,2022-10-30,2022-11-16,Electronics,Cancelled,1198,96.45,90.09,,Yes,non_delivered_with_date,performance_practice
+548,PO-00547,Epsilon_Group,2022-05-11,2022-05-14,MRO,Pending,363,45.37,38.73,,Yes,non_delivered_with_date,performance_practice
+559,PO-00558,Delta_Logistics,2023-07-16,2023-07-29,MRO,Partially Delivered,662,81.44,71.33,87.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+561,PO-00560,Alpha_Inc,2022-11-08,,Raw Materials,Delivered,313,64.03,57.74,1.0,Yes,delivered_missing_date,performance_practice
+566,PO-00565,Epsilon_Group,2023-09-14,2023-10-03,Raw Materials,Pending,54,32.28,28.65,3.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+571,PO-00570,Delta_Logistics,2023-03-29,2023-04-09,Electronics,Cancelled,1041,58.5,52.54,170.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+572,PO-00571,Gamma_Co,2023-11-23,2023-12-01,Electronics,Pending,933,70.72,65.47,42.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+573,PO-00572,Delta_Logistics,2022-08-07,,Raw Materials,Delivered,1423,41.48,40.9,199.0,Yes,delivered_missing_date,performance_practice
+576,PO-00575,Epsilon_Group,2022-06-23,,Raw Materials,Delivered,872,17.18,16.63,20.0,Yes,delivered_missing_date,performance_practice
+579,PO-00578,Alpha_Inc,2022-10-18,,MRO,Delivered,705,75.19,69.55,19.0,Yes,delivered_missing_date,performance_practice
+581,PO-00580,Alpha_Inc,2023-11-11,2023-11-16,Office Supplies,Pending,419,35.72,32.74,7.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+583,PO-00582,Delta_Logistics,2023-09-27,2023-10-12,Office Supplies,Partially Delivered,1179,90.14,82.63,194.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+584,PO-00583,Alpha_Inc,2022-12-10,,Raw Materials,Delivered,1743,76.51,65.88,40.0,Yes,delivered_missing_date,performance_practice
+587,PO-00586,Gamma_Co,2023-11-20,2023-11-30,MRO,Cancelled,169,47.16,43.4,,Yes,non_delivered_with_date,performance_practice
+588,PO-00587,Gamma_Co,2022-11-14,2022-11-20,Office Supplies,Pending,880,19.15,18.69,,No,non_delivered_with_date,performance_practice
+591,PO-00590,Beta_Supplies,2022-05-31,2022-06-07,Packaging,Partially Delivered,1131,97.43,91.28,103.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+592,PO-00591,Epsilon_Group,2022-01-26,2022-02-03,Raw Materials,Cancelled,1419,50.14,43.46,,Yes,non_delivered_with_date,performance_practice
+593,PO-00592,Delta_Logistics,2022-02-17,2022-02-18,Raw Materials,Pending,790,26.8,25.62,115.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+594,PO-00593,Gamma_Co,2022-09-08,2022-09-27,MRO,Pending,1547,61.12,53.43,77.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+595,PO-00594,Delta_Logistics,2023-05-02,2023-05-20,Office Supplies,Cancelled,166,95.65,94.48,23.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+597,PO-00596,Delta_Logistics,2022-03-16,2022-03-29,Office Supplies,Partially Delivered,840,83.42,80.35,153.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+598,PO-00597,Delta_Logistics,2023-04-12,,MRO,Delivered,1200,74.49,64.63,161.0,Yes,delivered_missing_date,performance_practice
+605,PO-00604,Gamma_Co,2023-05-22,2023-06-09,Packaging,Partially Delivered,562,102.56,90.88,38.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+607,PO-00606,Beta_Supplies,2022-09-07,2022-09-12,Electronics,Partially Delivered,851,76.44,74.76,91.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+610,PO-00609,Beta_Supplies,2023-12-06,2023-12-12,Packaging,Pending,1191,68.14,61.71,112.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+617,PO-00616,Beta_Supplies,2023-06-15,2023-06-21,Packaging,Partially Delivered,1345,103.06,95.14,,Yes,non_delivered_with_date,performance_practice
+619,PO-00618,Beta_Supplies,2022-02-21,2022-03-13,Office Supplies,Pending,753,88.02,79.92,75.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+629,PO-00628,Delta_Logistics,2023-09-02,2023-09-15,Packaging,Partially Delivered,1046,44.65,40.1,165.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+637,PO-00636,Epsilon_Group,2022-06-12,,Office Supplies,Delivered,143,91.98,86.02,5.0,Yes,delivered_missing_date,performance_practice
+641,PO-00640,Beta_Supplies,2022-09-11,2022-09-26,MRO,Pending,502,91.84,82.33,,Yes,non_delivered_with_date,performance_practice
+645,PO-00644,Delta_Logistics,2023-05-12,2023-05-18,Raw Materials,Cancelled,523,102.08,99.59,,Yes,non_delivered_with_date,performance_practice
+646,PO-00645,Epsilon_Group,2023-10-04,2023-10-23,Electronics,Pending,481,90.49,77.17,,Yes,non_delivered_with_date,performance_practice
+649,PO-00648,Delta_Logistics,2023-03-27,,Office Supplies,Delivered,1685,84.58,75.21,253.0,No,delivered_missing_date,performance_practice
+650,PO-00649,Epsilon_Group,2022-03-21,2022-03-31,Packaging,Cancelled,1362,46.64,42.85,33.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+651,PO-00650,Delta_Logistics,2024-01-01,2024-01-04,Electronics,Pending,1327,59.57,56.44,169.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+652,PO-00651,Epsilon_Group,2022-10-20,,MRO,Delivered,1807,69.47,60.0,50.0,Yes,delivered_missing_date,performance_practice
+653,PO-00652,Alpha_Inc,2022-08-29,2022-09-06,Office Supplies,Pending,406,91.73,89.13,,Yes,non_delivered_with_date,performance_practice
+654,PO-00653,Gamma_Co,2022-10-06,2022-10-18,Raw Materials,Partially Delivered,72,103.0,89.49,1.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+656,PO-00655,Delta_Logistics,2022-11-24,2022-12-10,Electronics,Pending,571,49.98,45.58,,No,non_delivered_with_date,performance_practice
+658,PO-00657,Beta_Supplies,2022-03-24,2022-04-07,Office Supplies,Pending,1910,77.15,68.49,170.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+659,PO-00658,Gamma_Co,2022-05-22,2022-05-31,Electronics,Partially Delivered,1173,32.12,29.18,,Yes,non_delivered_with_date,performance_practice
+660,PO-00659,Epsilon_Group,2022-06-04,2022-06-17,Packaging,Partially Delivered,851,20.44,19.22,22.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+661,PO-00660,Epsilon_Group,2022-08-25,2022-09-07,MRO,Cancelled,1253,43.38,38.01,34.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+667,PO-00666,Gamma_Co,2022-03-07,2022-03-11,Packaging,Cancelled,1681,99.88,96.38,90.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+668,PO-00667,Alpha_Inc,2023-03-01,2023-03-05,Raw Materials,Partially Delivered,818,51.89,47.85,12.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+672,PO-00671,Epsilon_Group,2023-04-23,2023-05-06,Packaging,Pending,1089,102.66,89.21,33.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+679,PO-00678,Delta_Logistics,2023-12-14,2023-12-27,MRO,Pending,209,72.71,64.34,39.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+680,PO-00679,Beta_Supplies,2022-01-21,,Packaging,Delivered,1548,25.03,22.87,,Yes,delivered_missing_date,performance_practice
+684,PO-00683,Epsilon_Group,2022-01-07,2022-01-26,MRO,Pending,739,68.47,66.09,19.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+686,PO-00685,Delta_Logistics,2022-11-02,2022-11-06,Office Supplies,Cancelled,429,58.95,55.35,59.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+687,PO-00686,Gamma_Co,2023-02-04,,Electronics,Delivered,1618,32.76,28.41,62.0,Yes,delivered_missing_date,performance_practice
+689,PO-00688,Beta_Supplies,2023-07-06,2023-07-15,Electronics,Partially Delivered,740,32.53,29.35,84.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+690,PO-00689,Gamma_Co,2023-07-14,,Raw Materials,Delivered,1500,29.19,27.24,72.0,Yes,delivered_missing_date,performance_practice
+691,PO-00690,Delta_Logistics,2023-09-10,2023-09-29,Office Supplies,Cancelled,1686,88.18,77.15,,Yes,non_delivered_with_date,performance_practice
+692,PO-00691,Epsilon_Group,2022-08-14,2022-08-16,Raw Materials,Cancelled,1341,42.96,41.75,39.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+693,PO-00692,Alpha_Inc,2023-05-15,2023-05-21,MRO,Cancelled,1908,16.42,15.31,36.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+694,PO-00693,Gamma_Co,2022-08-13,2022-09-02,MRO,Partially Delivered,1650,100.62,90.45,85.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+702,PO-00701,Delta_Logistics,2023-11-27,,Electronics,Delivered,61,26.47,24.62,6.0,Yes,delivered_missing_date,performance_practice
+705,PO-00704,Delta_Logistics,2023-04-24,2023-05-05,Electronics,Partially Delivered,1971,32.4,30.48,321.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+707,PO-00706,Delta_Logistics,2023-09-30,2023-10-13,MRO,Cancelled,548,69.7,61.87,90.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+712,PO-00711,Beta_Supplies,2023-08-01,2023-08-08,Office Supplies,Cancelled,139,23.71,20.18,14.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+713,PO-00712,Gamma_Co,2023-11-10,,Raw Materials,Delivered,825,99.89,97.65,30.0,Yes,delivered_missing_date,performance_practice
+717,PO-00716,Epsilon_Group,2023-03-15,2023-03-31,Packaging,Pending,1675,73.8,65.34,42.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+718,PO-00717,Gamma_Co,2022-05-19,2022-05-31,Raw Materials,Pending,1071,60.77,58.5,,Yes,non_delivered_with_date,performance_practice
+720,PO-00719,Delta_Logistics,2022-07-06,2022-07-25,MRO,Pending,164,48.16,47.46,27.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+721,PO-00720,Epsilon_Group,2022-02-21,2022-03-06,Electronics,Cancelled,666,43.76,41.13,18.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+722,PO-00721,Delta_Logistics,2022-09-24,2022-10-07,Packaging,Partially Delivered,1976,34.71,31.56,286.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+725,PO-00724,Alpha_Inc,2022-08-05,,Packaging,Partially Delivered,1574,17.9,15.85,31.0,Yes,non_delivered_with_defect_record,performance_practice
+726,PO-00725,Epsilon_Group,2023-04-11,2023-04-26,Office Supplies,Partially Delivered,1699,32.05,29.34,69.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+733,PO-00732,Delta_Logistics,2022-03-25,2022-04-11,Packaging,Partially Delivered,1350,85.06,82.34,,No,non_delivered_with_date,performance_practice
+735,PO-00734,Beta_Supplies,2022-01-20,2022-02-03,Packaging,Pending,810,71.02,66.8,73.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+736,PO-00735,Delta_Logistics,2023-07-07,2023-07-23,Packaging,Cancelled,725,66.4,62.1,118.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+739,PO-00738,Gamma_Co,2022-08-18,,Office Supplies,Delivered,506,84.63,72.69,20.0,Yes,delivered_missing_date,performance_practice
+744,PO-00743,Alpha_Inc,2022-02-01,,Raw Materials,Pending,1172,85.76,81.43,25.0,Yes,non_delivered_with_defect_record,performance_practice
+747,PO-00746,Beta_Supplies,2022-01-21,,Raw Materials,Delivered,1058,65.68,57.21,101.0,Yes,delivered_missing_date,performance_practice
+749,PO-00748,Epsilon_Group,2022-06-06,,Office Supplies,Delivered,1737,24.88,24.28,46.0,Yes,delivered_missing_date,performance_practice
+752,PO-00751,Delta_Logistics,2023-04-30,,Electronics,Delivered,1809,13.58,12.68,,No,delivered_missing_date,performance_practice
+753,PO-00752,Beta_Supplies,2023-11-17,,Electronics,Cancelled,86,93.6,88.22,5.0,Yes,non_delivered_with_defect_record,performance_practice
+754,PO-00753,Epsilon_Group,2022-04-28,,MRO,Delivered,1853,21.92,20.72,,Yes,delivered_missing_date,performance_practice
+756,PO-00755,Beta_Supplies,2022-08-12,2022-09-01,Office Supplies,Pending,1768,79.61,74.97,207.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+757,PO-00756,Beta_Supplies,2023-04-22,2023-05-03,Electronics,Partially Delivered,1598,26.3,26.03,154.0,No,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+758,PO-00757,Alpha_Inc,2023-12-18,2024-01-05,MRO,Cancelled,328,93.23,82.63,6.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+761,PO-00760,Epsilon_Group,2022-06-21,2022-06-25,Packaging,Cancelled,922,10.84,9.27,29.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+766,PO-00765,Gamma_Co,2022-11-15,2022-11-22,Office Supplies,Pending,645,35.05,30.88,27.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+767,PO-00766,Gamma_Co,2022-04-21,2022-05-04,Electronics,Cancelled,1953,68.07,62.95,87.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+771,PO-00770,Epsilon_Group,2023-08-13,,Office Supplies,Delivered,748,85.95,79.16,32.0,Yes,delivered_missing_date,performance_practice
+772,PO-00771,Alpha_Inc,2023-11-25,2023-12-03,Electronics,Pending,1092,65.17,63.11,21.0,Yes,non_delivered_with_date;non_delivered_with_defect_record,performance_practice
+775,PO-00774,Alpha_Inc,2022-07-23,,Office Supplies,Delivered,445,68.94,60.35,7.0,Yes,delivered_missing_date,performance_practice

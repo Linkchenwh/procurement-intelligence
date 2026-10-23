@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "PerfFact",
+          "nodeLineageTag": "f7e183f0-b1f1-4fc0-8c0e-67925921431c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "GovDate",
+          "nodeLineageTag": "0bb819ad-45d6-5d18-af9a-ec0a3def06ff",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1042.1353669192847,
+            "y": 641.98329663820448
+          },
+          "nodeIndex": "GovDepartment",
+          "nodeLineageTag": "d3ea9e92-7a90-5f6f-b3e8-237baa326ca7",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 663.06768345964235,
+            "y": 292.08453098481976
+          },
+          "nodeIndex": "GovFact",
+          "nodeLineageTag": "2668155b-853f-5b38-8b46-ea9f5b906774",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 842.81860754010972,
+            "y": 123.02170152679437
+          },
+          "nodeIndex": "GovSupplier",
+          "nodeLineageTag": "61f2541f-5f9f-5eae-89cb-4c5478595a9f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 554.97511925836329
+          },
+          "nodeIndex": "GovType",
+          "nodeLineageTag": "5eb1f88a-4211-5d26-8de0-92414cec305c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1427.4550172353529,
+            "y": 222.99164831910224
+          },
+          "nodeIndex": "MarketQuotes",
+          "nodeLineageTag": "042acd4a-1bef-5c86-8f19-0fe68a136ec2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1812.7746675514213,
+            "y": 222.99164831910224
+          },
+          "nodeIndex": "MarketScenario",
+          "nodeLineageTag": "d647abbf-5442-510f-97b2-72186b85a2dc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2198.0943178674897,
+            "y": 320.99164831910224
+          },
+          "nodeIndex": "PerfCategory",
+          "nodeLineageTag": "527b70d2-6aa2-52fa-bb54-c6890e2f1765",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2583.4139681835582,
+            "y": 320.99164831910224
+          },
+          "nodeIndex": "PerfSupplier",
+          "nodeLineageTag": "322a6bf4-933a-5987-92af-c7ed07a79814",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "所有表",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "所有表",
+  "defaultDiagram": "所有表"
+}

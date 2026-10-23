@@ -1,0 +1,170 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "market_evidence",
+  "position": {
+    "x": 646,
+    "y": 325,
+    "width": 610,
+    "height": 270,
+    "z": 971,
+    "tabOrder": 971
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "brand"
+                }
+              },
+              "queryRef": "MarketQuotes.brand",
+              "nativeQueryRef": "brand"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "price_per_500"
+                }
+              },
+              "queryRef": "MarketQuotes.price_per_500",
+              "nativeQueryRef": "price_per_500"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "currency"
+                }
+              },
+              "queryRef": "MarketQuotes.currency",
+              "nativeQueryRef": "currency"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "spec_comparable"
+                }
+              },
+              "queryRef": "MarketQuotes.spec_comparable",
+              "nativeQueryRef": "spec_comparable"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "collected_at"
+                }
+              },
+              "queryRef": "MarketQuotes.collected_at",
+              "nativeQueryRef": "collected_at"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketQuotes"
+                    }
+                  },
+                  "Property": "url"
+                }
+              },
+              "queryRef": "MarketQuotes.url",
+              "nativeQueryRef": "url"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'来源、时间与可比性（链接可核对）'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

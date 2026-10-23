@@ -1,0 +1,52 @@
+[
+  {
+    "GovSupplier[supplier_key]": "1029823",
+    "GovSupplier[supplier_label]": "Health Net Community Solutions, Inc.",
+    "[amount]": 13587059000.06
+  },
+  {
+    "GovSupplier[supplier_key]": "1087520",
+    "GovSupplier[supplier_label]": "L.A. Care Health Plan",
+    "[amount]": 11160129000.04
+  },
+  {
+    "GovSupplier[supplier_key]": "1275360",
+    "GovSupplier[supplier_label]": "Delta Dental of California",
+    "[amount]": 8172038064.03
+  },
+  {
+    "GovSupplier[supplier_key]": "1035764",
+    "GovSupplier[supplier_label]": "Blue Cross of California Partnership Plan, Inc.",
+    "[amount]": 7176560939.15
+  },
+  {
+    "GovSupplier[supplier_key]": "1059342",
+    "GovSupplier[supplier_label]": "Inland Empire Health Plan",
+    "[amount]": 5438790000.04
+  },
+  {
+    "GovSupplier[supplier_key]": "1010119",
+    "GovSupplier[supplier_label]": "County of Los Angeles",
+    "[amount]": 4409424742.19
+  },
+  {
+    "GovSupplier[supplier_key]": "1559320",
+    "GovSupplier[supplier_label]": "Fresno-Kings-Madera Regional Health Authority",
+    "[amount]": 3509792000.0
+  },
+  {
+    "GovSupplier[supplier_key]": "1030158",
+    "GovSupplier[supplier_label]": "Health Plan of San Joaquin",
+    "[amount]": 3102765864.03
+  },
+  {
+    "GovSupplier[supplier_key]": "1074588",
+    "GovSupplier[supplier_label]": "Ventura County",
+    "[amount]": 3029475475.1
+  },
+  {
+    "GovSupplier[supplier_key]": "1096380",
+    "GovSupplier[supplier_label]": "Molina Healthcare of California Partner Plan, Inc.",
+    "[amount]": 3026911000.05
+  }
+]

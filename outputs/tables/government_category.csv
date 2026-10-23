@@ -1,0 +1,6 @@
+﻿Acquisition Type,amount,observed_orders,rows,share,cumulative_share,abc,source_domain,amount_scope
+NON-IT Services,140695666446.65,57889,67542,0.9349676989347578,0.9349676989347578,A,california_history,accepted_observation_subset_not_statewide_total
+IT Services,4453403267.62,7756,10980,0.029594288940903938,0.9645619878756618,B,california_history,accepted_observation_subset_not_statewide_total
+NON-IT Goods,3771796028.09,108940,207725,0.025064790851762116,0.989626778727424,C,california_history,accepted_observation_subset_not_statewide_total
+IT Goods,1547375119.0,23723,49156,0.010282802526465268,0.9999095812538893,C,california_history,accepted_observation_subset_not_statewide_total
+IT Telecommunications,13606379.94,101,147,9.041874611083128e-05,1.0000000000000002,C,california_history,accepted_observation_subset_not_statewide_total

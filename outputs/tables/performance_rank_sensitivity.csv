@@ -1,0 +1,6 @@
+﻿Item_Category,合规优先,周期优先,均衡,winner_changes,comparability_assumption,source_domain
+Electronics,Alpha_Inc,Delta_Logistics,Epsilon_Group,True,同品类服务条件可比的假设，未经SKU/规格/合同验证；不作为正式供应商优劣排名,performance_practice
+MRO,Epsilon_Group,Epsilon_Group,Epsilon_Group,False,同品类服务条件可比的假设，未经SKU/规格/合同验证；不作为正式供应商优劣排名,performance_practice
+Office Supplies,Epsilon_Group,Delta_Logistics,Gamma_Co,True,同品类服务条件可比的假设，未经SKU/规格/合同验证；不作为正式供应商优劣排名,performance_practice
+Packaging,Epsilon_Group,Delta_Logistics,Alpha_Inc,True,同品类服务条件可比的假设，未经SKU/规格/合同验证；不作为正式供应商优劣排名,performance_practice
+Raw Materials,Epsilon_Group,Gamma_Co,Epsilon_Group,True,同品类服务条件可比的假设，未经SKU/规格/合同验证；不作为正式供应商优劣排名,performance_practice

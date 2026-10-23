@@ -1,0 +1,27 @@
+model Model
+	culture: zh-CN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["GovFact", "GovSupplier", "GovDepartment", "GovType", "GovDate", "PerfFact", "PerfSupplier", "PerfCategory", "MarketQuotes", "MarketScenario"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table PerfFact
+ref table GovFact
+ref table GovSupplier
+ref table GovDepartment
+ref table GovType
+ref table GovDate
+ref table PerfSupplier
+ref table PerfCategory
+ref table MarketQuotes
+ref table MarketScenario
+
+ref cultureInfo zh-CN
+

@@ -1,0 +1,288 @@
+table MarketQuotes
+	lineageTag: 042acd4a-1bef-5c86-8f19-0fe68a136ec2
+
+	measure 'Market Comparable Observations' = CALCULATE(COUNTROWS(MarketQuotes),MarketQuotes[spec_comparable]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: c842b29f-e660-44f6-b82b-d561b385895f
+
+	measure 'Market Minimum Listed Price SameCurrency' = IF(HASONEVALUE(MarketQuotes[currency]),CALCULATE(MIN(MarketQuotes[price_per_500]),MarketQuotes[spec_comparable]=TRUE()))
+		formatString: 0.00
+		displayFolder: Audited metrics
+		lineageTag: 9653855d-d6d5-4baf-b629-cfb1d47efb59
+
+	measure 'Market Maximum Listed Price SameCurrency' = IF(HASONEVALUE(MarketQuotes[currency]),CALCULATE(MAX(MarketQuotes[price_per_500]),MarketQuotes[spec_comparable]=TRUE()))
+		formatString: 0.00
+		displayFolder: Audited metrics
+		lineageTag: 989ba057-1576-444f-83e8-a8bf6b039431
+
+	measure 'Market Comparable Listed Price' = IF(HASONEVALUE(MarketQuotes[currency]) && SELECTEDVALUE(MarketQuotes[spec_comparable])=TRUE(),MAX(MarketQuotes[price_per_500]))
+		formatString: 0.00
+		displayFolder: Audited metrics
+		lineageTag: 7ee8a5ad-8e96-410f-955a-d646b83ef67a
+
+	column quote_id
+		dataType: string
+		lineageTag: e91488f2-b016-5c50-84b0-32fe9bd53f07
+		summarizeBy: none
+		sourceColumn: quote_id
+
+	column brand
+		dataType: string
+		lineageTag: 4a3c2581-19ea-5e93-b5b7-1167ed88fdb9
+		summarizeBy: none
+		sourceColumn: brand
+
+	column product_name
+		dataType: string
+		lineageTag: 84fad7d7-cecc-5670-b1a1-e56d579ac6bd
+		summarizeBy: none
+		sourceColumn: product_name
+
+	column sku
+		dataType: string
+		lineageTag: 7b9263de-7941-5618-9f99-fe9de6db5978
+		summarizeBy: none
+		sourceColumn: sku
+
+	column manufacturer
+		dataType: string
+		lineageTag: 4ff0baf0-e2a0-5ea3-b3de-7068ce0c7041
+		summarizeBy: none
+		sourceColumn: manufacturer
+
+	column seller
+		dataType: string
+		lineageTag: f2f3be1f-6793-5ce3-b9b4-633a5763ef6e
+		summarizeBy: none
+		sourceColumn: seller
+
+	column contract_supplier
+		dataType: string
+		lineageTag: c91540a2-6649-5352-aa99-268375fe21f3
+		summarizeBy: none
+		sourceColumn: contract_supplier
+
+	column channel
+		dataType: string
+		lineageTag: 7f3788ee-81d1-529d-83a6-2d620c80cebe
+		summarizeBy: none
+		sourceColumn: channel
+
+	column paper_size
+		dataType: string
+		lineageTag: da0b4460-b741-5778-9af9-af83732fec2f
+		summarizeBy: none
+		sourceColumn: paper_size
+
+	column gsm
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 0731288e-324d-585e-870c-efcd43c28bcc
+		summarizeBy: none
+		sourceColumn: gsm
+
+	column sheets_per_ream
+		dataType: int64
+		formatString: #,0
+		lineageTag: 3d79ad62-478b-5e9a-a4c5-0f121af38b27
+		summarizeBy: none
+		sourceColumn: sheets_per_ream
+
+	column reams_per_box
+		dataType: int64
+		formatString: #,0
+		lineageTag: bca460f3-3ac6-5e3c-90cc-c7b55a8ed456
+		summarizeBy: none
+		sourceColumn: reams_per_box
+
+	column price
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: e6019340-5310-51d2-ac3e-bd5c2d0f87c5
+		summarizeBy: none
+		sourceColumn: price
+
+	column currency
+		dataType: string
+		lineageTag: d0c4cb64-8c52-59c6-b4c2-f43849ff00ed
+		summarizeBy: none
+		sourceColumn: currency
+
+	column quote_unit
+		dataType: string
+		lineageTag: c74c5d7c-d241-5c39-9e47-d09edd97f7c9
+		summarizeBy: none
+		sourceColumn: quote_unit
+
+	column min_order_units
+		dataType: int64
+		formatString: #,0
+		lineageTag: 5e92580c-5d5f-5510-8707-b0726d57235a
+		summarizeBy: none
+		sourceColumn: min_order_units
+
+	column max_order_units
+		dataType: int64
+		formatString: #,0
+		lineageTag: 33a2aa57-57f6-5263-9260-e6146f836241
+		summarizeBy: none
+		sourceColumn: max_order_units
+
+	column tax_status
+		dataType: string
+		lineageTag: 2a943162-de69-59c8-ac5f-68f9719c97eb
+		summarizeBy: none
+		sourceColumn: tax_status
+
+	column shipping_cost
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: c7959566-c78b-5dd3-9d3c-3b2229aaa5e8
+		summarizeBy: none
+		sourceColumn: shipping_cost
+
+	column shipping_terms
+		dataType: string
+		lineageTag: 23f91819-4088-59be-b1c7-d0bdd1ad5a3a
+		summarizeBy: none
+		sourceColumn: shipping_terms
+
+	column tax_terms
+		dataType: string
+		lineageTag: 6be1e2bf-ceac-5ae5-b898-39ca49b66af6
+		summarizeBy: none
+		sourceColumn: tax_terms
+
+	column region
+		dataType: string
+		lineageTag: caf3914a-9176-525d-903f-6523164cb50b
+		summarizeBy: none
+		sourceColumn: region
+
+	column lead_time_days
+		dataType: double
+		formatString: #,0.00
+		lineageTag: a10451c4-0d53-59d0-be3d-81e02406ab66
+		summarizeBy: none
+		sourceColumn: lead_time_days
+
+	column collected_at
+		dataType: string
+		lineageTag: 3711be5d-3f23-5389-a417-49ddad17f50d
+		summarizeBy: none
+		sourceColumn: collected_at
+
+	column url
+		dataType: string
+		lineageTag: e9b753b9-2c92-5c5e-9835-35cf7f8f2a62
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: url
+
+	column attributes
+		dataType: string
+		lineageTag: e45dcd57-9ec0-5b69-9704-6b9ffd447e2b
+		summarizeBy: none
+		sourceColumn: attributes
+
+	column data_status
+		dataType: string
+		lineageTag: 2ea30278-ec83-5e76-b912-976b6674cf03
+		summarizeBy: none
+		sourceColumn: data_status
+
+	column notes
+		dataType: string
+		lineageTag: ba31974a-e648-5fa1-b3ab-ed8f073bd051
+		summarizeBy: none
+		sourceColumn: notes
+
+	column evidence_file
+		dataType: string
+		lineageTag: d950fde9-6310-5eb4-895e-6316b10fabeb
+		summarizeBy: none
+		sourceColumn: evidence_file
+
+	column evidence_sha256
+		dataType: string
+		lineageTag: 6d3c1a91-3709-5114-a05a-9e9a5fc85eb2
+		summarizeBy: none
+		sourceColumn: evidence_sha256
+
+	column source_domain
+		dataType: string
+		lineageTag: 54510201-e490-5e72-b8a8-9da32e674b60
+		summarizeBy: none
+		sourceColumn: source_domain
+
+	column packaging_conflict
+		dataType: boolean
+		lineageTag: 4bb10e37-82dd-5d1a-b401-c89a7d0c519a
+		summarizeBy: none
+		sourceColumn: packaging_conflict
+
+	column review_note
+		dataType: string
+		lineageTag: 780b0753-55fa-57da-9470-5522fb69f9fd
+		summarizeBy: none
+		sourceColumn: review_note
+
+	column reams_per_unit
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 40495f0b-1a48-5c5f-a74c-eb7f977991eb
+		summarizeBy: none
+		sourceColumn: reams_per_unit
+
+	column price_per_500
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 6e0dd2a0-a5f6-509f-b9e9-94ece86294e1
+		summarizeBy: none
+		sourceColumn: price_per_500
+
+	column spec_comparable
+		dataType: boolean
+		lineageTag: 467750cc-b95c-51d9-91cd-28562eee68e1
+		summarizeBy: none
+		sourceColumn: spec_comparable
+
+	column quote_age_days
+		dataType: int64
+		formatString: #,0
+		lineageTag: be35a285-9ce9-5c38-ab06-9461b3045e0b
+		summarizeBy: none
+		sourceColumn: quote_age_days
+
+	column fresh_observation
+		dataType: boolean
+		lineageTag: 41c337b5-16c7-5b1c-8c12-af3e3fc5add3
+		summarizeBy: none
+		sourceColumn: fresh_observation
+
+	column source_link_present
+		dataType: boolean
+		lineageTag: 409caaa8-8dfb-57c7-85fa-f9ba7b9038a3
+		summarizeBy: none
+		sourceColumn: source_link_present
+
+	column evidence_note
+		dataType: string
+		lineageTag: 735fd559-c653-50a1-821f-5004a8e50a73
+		summarizeBy: none
+		sourceColumn: evidence_note
+
+	partition MarketQuotes = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\MarketQuotes.csv"), [Delimiter=",", Columns=40, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"quote_id", type text}, {"brand", type text}, {"product_name", type text}, {"sku", type text}, {"manufacturer", type text}, {"seller", type text}, {"contract_supplier", type text}, {"channel", type text}, {"paper_size", type text}, {"gsm", type number}, {"sheets_per_ream", Int64.Type}, {"reams_per_box", Int64.Type}, {"price", Currency.Type}, {"currency", type text}, {"quote_unit", type text}, {"min_order_units", Int64.Type}, {"max_order_units", Int64.Type}, {"tax_status", type text}, {"shipping_cost", Currency.Type}, {"shipping_terms", type text}, {"tax_terms", type text}, {"region", type text}, {"lead_time_days", type number}, {"collected_at", type text}, {"url", type text}, {"attributes", type text}, {"data_status", type text}, {"notes", type text}, {"evidence_file", type text}, {"evidence_sha256", type text}, {"source_domain", type text}, {"packaging_conflict", type logical}, {"review_note", type text}, {"reams_per_unit", type number}, {"price_per_500", Currency.Type}, {"spec_comparable", type logical}, {"quote_age_days", Int64.Type}, {"fresh_observation", type logical}, {"source_link_present", type logical}, {"evidence_note", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

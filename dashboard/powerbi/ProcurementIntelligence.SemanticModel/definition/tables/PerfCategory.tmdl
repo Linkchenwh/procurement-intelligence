@@ -1,0 +1,22 @@
+table PerfCategory
+	lineageTag: 527b70d2-6aa2-52fa-bb54-c6890e2f1765
+
+	column Item_Category
+		dataType: string
+		lineageTag: d68e1cfe-1f05-5459-8e13-5f8457bc1251
+		summarizeBy: none
+		sourceColumn: Item_Category
+
+	partition PerfCategory = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\PerfCategory.csv"), [Delimiter=",", Columns=1, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Item_Category", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

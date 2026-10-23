@@ -1,0 +1,3 @@
+﻿Supplier,Item_Category,orders,amount,delivery_samples,delivery_days,delivery_days_std,compliance_samples,compliance_rate,quality_samples,observed_defective_units,defect_rate_proxy,quality_denominator_if_assumed,quality_basis,eligible,eligibility_note,score,delivery_days_score,compliance_rate_score,rank
+SYNTHETIC_TEST_A,SYNTHETIC_TEST_ONLY,6,6000.0,6,2.0,0.0,6,0.8333333333333334,6,6.0,,,denominator unverified,True,通过分析准入,50.0,100.0,0.0,1.0
+SYNTHETIC_TEST_B,SYNTHETIC_TEST_ONLY,6,6000.0,6,8.0,0.0,6,1.0,6,12.0,,,denominator unverified,True,通过分析准入,50.0,0.0,100.0,1.0

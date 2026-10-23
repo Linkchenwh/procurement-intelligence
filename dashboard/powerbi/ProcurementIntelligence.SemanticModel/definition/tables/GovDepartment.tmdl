@@ -1,0 +1,22 @@
+table GovDepartment
+	lineageTag: d3ea9e92-7a90-5f6f-b3e8-237baa326ca7
+
+	column department
+		dataType: string
+		lineageTag: b1b74d8d-e4fc-5a02-aa8f-40e86e2d6935
+		summarizeBy: none
+		sourceColumn: department
+
+	partition GovDepartment = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\GovDepartment.csv"), [Delimiter=",", Columns=1, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"department", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

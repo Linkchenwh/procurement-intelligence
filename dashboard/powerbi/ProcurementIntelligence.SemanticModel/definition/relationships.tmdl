@@ -1,0 +1,24 @@
+relationship 2c2c3e96-44f6-5e1a-9186-650a7fc5e7bd
+	fromColumn: GovFact.supplier_key
+	toColumn: GovSupplier.supplier_key
+
+relationship 0ce908b0-1833-5e2c-8370-4d96d3c430a8
+	fromColumn: GovFact.department
+	toColumn: GovDepartment.department
+
+relationship 00683d97-1abb-5436-98f1-baad882d4b8b
+	fromColumn: GovFact.acquisition_type
+	toColumn: GovType.acquisition_type
+
+relationship 8b41119f-c170-50dc-9826-8fae6bf008d9
+	fromColumn: GovFact.purchase_date
+	toColumn: GovDate.date
+
+relationship a2c27715-189d-50a3-8f9b-71311bb2de50
+	fromColumn: PerfFact.Supplier
+	toColumn: PerfSupplier.Supplier
+
+relationship accbce4f-dcf2-517d-987f-56d2fcca195c
+	fromColumn: PerfFact.Item_Category
+	toColumn: PerfCategory.Item_Category
+

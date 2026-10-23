@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "spend_overview",
+    "supplier_performance",
+    "market_sourcing"
+  ],
+  "activePageName": "spend_overview"
+}

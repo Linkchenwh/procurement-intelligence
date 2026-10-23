@@ -1,0 +1,215 @@
+table PerfFact
+	lineageTag: 6f3ddc99-4308-5cca-8fa4-a2a8cc9907c9
+
+	measure 'Perf Noncancelled Orders' = CALCULATE(COUNTROWS(PerfFact),PerfFact[valid_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 86703cd2-05c4-40cc-9fa2-fd3ab6636afd
+
+	measure 'Perf Noncancelled Amount' = CALCULATE(SUM(PerfFact[amount]),PerfFact[valid_order]=TRUE())
+		formatString: #,0.00
+		displayFolder: Audited metrics
+		lineageTag: 0c9b7eeb-a2b1-4609-bf71-4247eed1daa4
+
+	measure 'Perf Cancelled Amount' = CALCULATE(SUM(PerfFact[amount]),PerfFact[valid_order]=FALSE())
+		formatString: #,0.00
+		displayFolder: Audited metrics
+		lineageTag: b40d9c38-3627-4f60-9809-b3a26a8a7b39
+
+	measure 'Perf Delivered Amount' = CALCULATE(SUM(PerfFact[amount]),PerfFact[delivered_order]=TRUE())
+		formatString: #,0.00
+		displayFolder: Audited metrics
+		lineageTag: 39a574ff-7899-4d19-a59d-4539c7b59660
+
+	measure 'Perf Nominal Price Difference' = CALCULATE(SUM(PerfFact[baseline_amount])-SUM(PerfFact[amount]),PerfFact[valid_order]=TRUE())
+		formatString: #,0.00
+		displayFolder: Audited metrics
+		lineageTag: e13cd733-e7aa-453f-89a0-f6dee82f947c
+
+	measure 'Perf Delivered Orders' = CALCULATE(COUNTROWS(PerfFact),PerfFact[delivered_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 1693e2b5-c739-4977-be49-558c02d0e670
+
+	measure 'Perf Delivery Days' = CALCULATE(AVERAGE(PerfFact[delivery_days]),PerfFact[valid_order]=TRUE())
+		formatString: 0.00
+		displayFolder: Audited metrics
+		lineageTag: 1ecdd8ed-cf2f-412a-9fe1-60c9c93e9be0
+
+	measure 'Perf Delivery Samples' = CALCULATE(COUNT(PerfFact[delivery_days]),PerfFact[valid_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: b3481dc6-5c32-4882-bfb9-460ea59dd72e
+
+	measure 'Perf Delivery Coverage' = DIVIDE([Perf Delivery Samples],[Perf Delivered Orders])
+		formatString: 0.0%
+		displayFolder: Audited metrics
+		lineageTag: c80343e6-8a90-4adf-ba5b-b7b03f699c83
+
+	measure 'Perf Recorded Compliance Rate' = CALCULATE(AVERAGE(PerfFact[compliant]),PerfFact[valid_order]=TRUE())
+		formatString: 0.0%
+		displayFolder: Audited metrics
+		lineageTag: 4f5b6df0-df04-4c3d-a192-74a28edef220
+
+	measure 'Perf Compliance Samples' = CALCULATE(COUNT(PerfFact[compliant]),PerfFact[valid_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 6808dd67-e103-4225-b55f-1c67eb47e46d
+
+	measure 'Perf Quality Samples' = CALCULATE(COUNT(PerfFact[observed_defective_units]),PerfFact[valid_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 4fc3538c-e791-4255-9ff5-37604521489e
+
+	measure 'Perf Quality Record Coverage' = DIVIDE([Perf Quality Samples],[Perf Delivered Orders])
+		formatString: 0.0%
+		displayFolder: Audited metrics
+		lineageTag: 7cb6c797-dce8-44aa-b01e-99ec1da2a1f1
+
+	measure 'Perf Observed Defects' = CALCULATE(SUM(PerfFact[observed_defective_units]),PerfFact[valid_order]=TRUE())
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 3ef6caac-6444-4309-854c-8345841a0a69
+
+	column PO_ID
+		dataType: string
+		lineageTag: 12f28714-1da3-5039-aa90-b9ca465de6d0
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+	column Supplier
+		dataType: string
+		lineageTag: bab96188-2322-5002-a9a3-80b6aa1a50d0
+		summarizeBy: none
+		sourceColumn: Supplier
+
+	column Order_Date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: 233aa581-955f-5e42-8211-334c6e0b2081
+		summarizeBy: none
+		sourceColumn: Order_Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Delivery_Date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: fc70454a-0c4d-5901-8c07-509ea7554c5a
+		summarizeBy: none
+		sourceColumn: Delivery_Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Item_Category
+		dataType: string
+		lineageTag: c13dd7cb-97da-52ef-a17e-c75a39f80cb5
+		summarizeBy: none
+		sourceColumn: Item_Category
+
+	column Order_Status
+		dataType: string
+		lineageTag: 9af9d18c-20a0-56b6-a525-43aea2d48a49
+		summarizeBy: none
+		sourceColumn: Order_Status
+
+	column Quantity
+		dataType: int64
+		formatString: #,0
+		lineageTag: d461f17c-a399-5db4-8579-c555941c69c0
+		summarizeBy: none
+		sourceColumn: Quantity
+
+	column Unit_Price
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 9ff3d4f7-7f70-5db0-b59b-cc1ef18621b7
+		summarizeBy: none
+		sourceColumn: Unit_Price
+
+	column Negotiated_Price
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 8b970c8b-0f46-5de4-bb3b-533f2778d622
+		summarizeBy: none
+		sourceColumn: Negotiated_Price
+
+	column Defective_Units
+		dataType: int64
+		formatString: #,0
+		lineageTag: 1a17cc07-8f08-5d63-b375-422bf3c35d9a
+		summarizeBy: none
+		sourceColumn: Defective_Units
+
+	column Compliance
+		dataType: string
+		lineageTag: 86781217-6a41-50b4-ae3c-f658941dd8d7
+		summarizeBy: none
+		sourceColumn: Compliance
+
+	column delivery_days
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 9244e6f1-4ab6-5e9c-8395-871fff972873
+		summarizeBy: none
+		sourceColumn: delivery_days
+
+	column observed_defective_units
+		dataType: int64
+		formatString: #,0
+		lineageTag: 9a1bc044-91c6-520b-b33e-8a664e0c78a9
+		summarizeBy: none
+		sourceColumn: observed_defective_units
+
+	column compliant
+		dataType: int64
+		formatString: #,0
+		lineageTag: e3213876-0741-513e-8e37-495881d270f9
+		summarizeBy: none
+		sourceColumn: compliant
+
+	column amount
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: c22e8564-1a60-5052-be66-ff60f014c933
+		summarizeBy: none
+		sourceColumn: amount
+
+	column baseline_amount
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 322b360b-ac13-512b-a3d6-092fb563393f
+		summarizeBy: none
+		sourceColumn: baseline_amount
+
+	column valid_order
+		dataType: boolean
+		lineageTag: 818746e1-9635-59e5-b2fd-253876945564
+		summarizeBy: none
+		sourceColumn: valid_order
+
+	column delivered_order
+		dataType: boolean
+		lineageTag: 6836288d-c9cf-5481-afec-6fef59dac52b
+		summarizeBy: none
+		sourceColumn: delivered_order
+
+	column source_domain
+		dataType: string
+		lineageTag: 6c6fa965-6731-5cd7-a915-a17ca6255eff
+		summarizeBy: none
+		sourceColumn: source_domain
+
+	partition PerfFact = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\PerfFact.csv"), [Delimiter=",", Columns=19, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"PO_ID", type text}, {"Supplier", type text}, {"Order_Date", type date}, {"Delivery_Date", type date}, {"Item_Category", type text}, {"Order_Status", type text}, {"Quantity", Int64.Type}, {"Unit_Price", Currency.Type}, {"Negotiated_Price", Currency.Type}, {"Defective_Units", Int64.Type}, {"Compliance", type text}, {"delivery_days", type number}, {"observed_defective_units", Int64.Type}, {"compliant", Int64.Type}, {"amount", Currency.Type}, {"baseline_amount", Currency.Type}, {"valid_order", type logical}, {"delivered_order", type logical}, {"source_domain", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

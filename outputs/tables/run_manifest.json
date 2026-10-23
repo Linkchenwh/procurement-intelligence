@@ -1,0 +1,50 @@
+{
+  "executed_at": "2026-10-22T16:18:28.515967+08:00",
+  "as_of": "2026-10-22",
+  "domains": {
+    "california_history": {
+      "raw_rows": 344504,
+      "rows": 335550,
+      "amount": 150481847241.3,
+      "orders": 198343,
+      "supplier_codes": 25183,
+      "unknown_supplier_amount": 2996212264.4900002,
+      "top1_share": 0.09029035228596669,
+      "top5_share": 0.30259182644338883,
+      "hhi": 267.18100003682207,
+      "raw_sha256": "45aa37a683e308c17c28c2edaadf08692be18ed17131afe8edf2e701abc6c9b5"
+    },
+    "performance_practice": {
+      "raw_rows": 777,
+      "raw_amount": 45373696.39,
+      "valid_amount": 41783201.269999996,
+      "cancelled_amount": 3590495.12,
+      "delivered_amount": 32408662.82,
+      "order_count": 777,
+      "valid_order_count": 714,
+      "supplier_count": 5,
+      "nominal_price_difference": 3638920.0799999996,
+      "top1_share": 0.21999916235714506,
+      "top5_share": 1.0,
+      "hhi": 2016.8532696671311,
+      "raw_sha256": "bf9a529c52cd7de254994a55d087f865d3aefc0ba66790e8ee43a26e7beb6e9c",
+      "supplier_category_groups": 25,
+      "scoring_hypothesis_rows": 75,
+      "valid_delivery_samples": 491,
+      "delivered_orders": 560,
+      "checks": "SQL/pandas all spend totals and 25 supplier-category metrics matched; unknown defect rates remain NULL"
+    },
+    "market_quotes": {
+      "observations": 10,
+      "spec_comparable": 7,
+      "channels": 1,
+      "verified_all_in_scenarios": 0
+    }
+  },
+  "checks": [
+    "government SQL/Python amount/orders/rows/suppliers",
+    "raw=accepted+quarantine row and parsed amount reconciliation",
+    "performance SQL/Python all totals and supplier-category metrics; audit and scoring hypotheses",
+    "market evidence SHA256 verification for every quotation"
+  ]
+}

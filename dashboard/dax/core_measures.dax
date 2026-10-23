@@ -1,0 +1,59 @@
+// order_id preserves exact source order identity; currency is not assumed.
+
+// Table: GovFact
+Gov Observed Amount = SUM(GovFact[amount])
+
+Gov Observed Orders = DISTINCTCOUNT(GovFact[order_id])
+
+Gov Observation Rows = COUNTROWS(GovFact)
+
+Gov Known Suppliers = CALCULATE(DISTINCTCOUNT(GovFact[supplier_key]), GovFact[supplier_key] <> "UNKNOWN")
+
+Gov Top5 Share = VAR S = ALLSELECTED(GovSupplier) VAR A = ADDCOLUMNS(S, "SupplierAmount", CALCULATE([Gov Observed Amount])) RETURN DIVIDE(SUMX(TOPN(5,A,[SupplierAmount],DESC,GovSupplier[supplier_key],ASC),[SupplierAmount]),CALCULATE([Gov Observed Amount],S))
+
+Gov HHI = VAR S = ALLSELECTED(GovSupplier) VAR A = CALCULATE([Gov Observed Amount],S) RETURN IF(A>0,SUMX(S,POWER(DIVIDE(CALCULATE([Gov Observed Amount]),A),2))*10000)
+
+Gov Dated Coverage = DIVIDE(CALCULATE([Gov Observed Amount],NOT ISBLANK(GovFact[purchase_date])),[Gov Observed Amount])
+
+// Table: PerfFact
+Perf Noncancelled Orders = CALCULATE(COUNTROWS(PerfFact),PerfFact[valid_order]=TRUE())
+
+Perf Noncancelled Amount = CALCULATE(SUM(PerfFact[amount]),PerfFact[valid_order]=TRUE())
+
+Perf Cancelled Amount = CALCULATE(SUM(PerfFact[amount]),PerfFact[valid_order]=FALSE())
+
+Perf Delivered Amount = CALCULATE(SUM(PerfFact[amount]),PerfFact[delivered_order]=TRUE())
+
+Perf Nominal Price Difference = CALCULATE(SUM(PerfFact[baseline_amount])-SUM(PerfFact[amount]),PerfFact[valid_order]=TRUE())
+
+Perf Delivered Orders = CALCULATE(COUNTROWS(PerfFact),PerfFact[delivered_order]=TRUE())
+
+Perf Delivery Days = CALCULATE(AVERAGE(PerfFact[delivery_days]),PerfFact[valid_order]=TRUE())
+
+Perf Delivery Samples = CALCULATE(COUNT(PerfFact[delivery_days]),PerfFact[valid_order]=TRUE())
+
+Perf Delivery Coverage = DIVIDE([Perf Delivery Samples],[Perf Delivered Orders])
+
+Perf Recorded Compliance Rate = CALCULATE(AVERAGE(PerfFact[compliant]),PerfFact[valid_order]=TRUE())
+
+Perf Compliance Samples = CALCULATE(COUNT(PerfFact[compliant]),PerfFact[valid_order]=TRUE())
+
+Perf Quality Samples = CALCULATE(COUNT(PerfFact[observed_defective_units]),PerfFact[valid_order]=TRUE())
+
+Perf Quality Record Coverage = DIVIDE([Perf Quality Samples],[Perf Delivered Orders])
+
+Perf Observed Defects = CALCULATE(SUM(PerfFact[observed_defective_units]),PerfFact[valid_order]=TRUE())
+
+// Table: MarketQuotes
+Market Comparable Observations = CALCULATE(COUNTROWS(MarketQuotes),MarketQuotes[spec_comparable]=TRUE())
+
+Market Minimum Listed Price SameCurrency = IF(HASONEVALUE(MarketQuotes[currency]),CALCULATE(MIN(MarketQuotes[price_per_500]),MarketQuotes[spec_comparable]=TRUE()))
+
+Market Maximum Listed Price SameCurrency = IF(HASONEVALUE(MarketQuotes[currency]),CALCULATE(MAX(MarketQuotes[price_per_500]),MarketQuotes[spec_comparable]=TRUE()))
+
+Market Comparable Listed Price = IF(HASONEVALUE(MarketQuotes[currency]) && SELECTEDVALUE(MarketQuotes[spec_comparable])=TRUE(),MAX(MarketQuotes[price_per_500]))
+
+// Table: MarketScenario
+Market Scenario Known Total = IF(COUNT(MarketScenario[total_cost])>0,MIN(MarketScenario[total_cost]))
+
+// No on-time delivery, formal defect rate or actual savings measure.

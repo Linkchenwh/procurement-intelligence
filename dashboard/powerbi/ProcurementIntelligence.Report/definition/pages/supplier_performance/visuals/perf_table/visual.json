@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "perf_table",
+  "position": {
+    "x": 24,
+    "y": 335,
+    "width": 1232,
+    "height": 240,
+    "z": 359,
+    "tabOrder": 359
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfSupplier"
+                    }
+                  },
+                  "Property": "Supplier"
+                }
+              },
+              "queryRef": "PerfSupplier.Supplier",
+              "nativeQueryRef": "Supplier"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Noncancelled Orders"
+                }
+              },
+              "queryRef": "PerfFact.Perf Noncancelled Orders",
+              "nativeQueryRef": "Perf Noncancelled Orders"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Delivered Orders"
+                }
+              },
+              "queryRef": "PerfFact.Perf Delivered Orders",
+              "nativeQueryRef": "Perf Delivered Orders"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Delivery Samples"
+                }
+              },
+              "queryRef": "PerfFact.Perf Delivery Samples",
+              "nativeQueryRef": "Perf Delivery Samples"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Delivery Days"
+                }
+              },
+              "queryRef": "PerfFact.Perf Delivery Days",
+              "nativeQueryRef": "Perf Delivery Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Delivery Coverage"
+                }
+              },
+              "queryRef": "PerfFact.Perf Delivery Coverage",
+              "nativeQueryRef": "Perf Delivery Coverage"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Recorded Compliance Rate"
+                }
+              },
+              "queryRef": "PerfFact.Perf Recorded Compliance Rate",
+              "nativeQueryRef": "Perf Recorded Compliance Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Compliance Samples"
+                }
+              },
+              "queryRef": "PerfFact.Perf Compliance Samples",
+              "nativeQueryRef": "Perf Compliance Samples"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Quality Samples"
+                }
+              },
+              "queryRef": "PerfFact.Perf Quality Samples",
+              "nativeQueryRef": "Perf Quality Samples"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PerfFact"
+                    }
+                  },
+                  "Property": "Perf Quality Record Coverage"
+                }
+              },
+              "queryRef": "PerfFact.Perf Quality Record Coverage",
+              "nativeQueryRef": "Perf Quality Record Coverage"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'观测指标与有效分母（不是整体优劣排名）'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

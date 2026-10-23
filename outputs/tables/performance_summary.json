@@ -1,0 +1,13 @@
+{
+  "raw_amount": 45373696.39,
+  "valid_amount": 41783201.269999996,
+  "cancelled_amount": 3590495.12,
+  "delivered_amount": 32408662.82,
+  "order_count": 777,
+  "valid_order_count": 714,
+  "supplier_count": 5,
+  "nominal_price_difference": 3638920.0799999996,
+  "top1_share": 0.21999916235714506,
+  "top5_share": 1.0,
+  "hhi": 2016.8532696671311
+}

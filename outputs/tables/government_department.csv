@@ -1,0 +1,112 @@
+﻿Department Name,amount,observed_orders,rows,share,cumulative_share,abc,source_domain,amount_scope
+"Health Care Services, Department of",99786506850.73,1636,2821,0.6631132504023611,0.6631132504023611,A,california_history,accepted_observation_subset_not_statewide_total
+"Public Health, Department of",5666501075.23,3116,3888,0.03765571182910639,0.7007689622314676,A,california_history,accepted_observation_subset_not_statewide_total
+"Social Services, Department of",5566541835.58,1725,2306,0.0369914507140118,0.7377604129454793,A,california_history,accepted_observation_subset_not_statewide_total
+"Corrections and Rehabilitation, Department of",4656102421.5,35358,55779,0.030941289642955193,0.7687017025884345,A,california_history,accepted_observation_subset_not_statewide_total
+"State Hospitals, Department of",4432022764.9,8289,18242,0.029452208662704565,0.7981539112511391,A,california_history,accepted_observation_subset_not_statewide_total
+"Transportation, Department of",4333342828.96,12985,17425,0.02879644892989264,0.8269503601810317,A,california_history,accepted_observation_subset_not_statewide_total
+"High Speed Rail Authority, California",3565362362.51,264,477,0.02369297312514304,0.8506433333061748,B,california_history,accepted_observation_subset_not_statewide_total
+"Water Resources, Department of",2780070011.13,3864,27178,0.01847445430857926,0.8691177876147541,B,california_history,accepted_observation_subset_not_statewide_total
+Correctional Health Care Services,2063335852.54,28115,31758,0.01371152660846467,0.8828293142232188,B,california_history,accepted_observation_subset_not_statewide_total
+Employment Development Department,1719935997.02,3228,3286,0.011429524747008563,0.8942588389702273,B,california_history,accepted_observation_subset_not_statewide_total
+"General Services, Department of",1135321982.16,8126,10644,0.00754457765486819,0.9018034166250954,B,california_history,accepted_observation_subset_not_statewide_total
+"Education, Department of",1091695209.43,1467,3497,0.0072546637979493305,0.9090580804230448,B,california_history,accepted_observation_subset_not_statewide_total
+"Community Services and Development, Department of",867115217.37,761,1902,0.005762257928556442,0.9148203383516013,B,california_history,accepted_observation_subset_not_statewide_total
+"Forestry and Fire Protection, Department of",864232712.45,14200,21849,0.0057431027615190665,0.9205634411131203,B,california_history,accepted_observation_subset_not_statewide_total
+"Consumer Affairs, Department of",648136498.87,6398,14827,0.0043070743132937695,0.9248705154264141,B,california_history,accepted_observation_subset_not_statewide_total
+Health & Human Services Agency,637436934.05,241,456,0.004235972283273876,0.929106487709688,B,california_history,accepted_observation_subset_not_statewide_total
+Franchise Tax Board,585855722.65,3631,5843,0.003893198637511216,0.9329996863471992,B,california_history,accepted_observation_subset_not_statewide_total
+"Aging, Department of",584861374.7,460,515,0.0038865908773844716,0.9368862772245837,B,california_history,accepted_observation_subset_not_statewide_total
+"Highway Patrol, California",549260568.13,4203,9326,0.003650012132355421,0.9405362893569391,B,california_history,accepted_observation_subset_not_statewide_total
+Public Utilities Commission,490182238.91,721,855,0.003257417741051419,0.9437937070979905,B,california_history,accepted_observation_subset_not_statewide_total
+"Parks & Recreation, Department of",482032883.61,4039,8214,0.003203262668865653,0.9469969697668561,B,california_history,accepted_observation_subset_not_statewide_total
+"Fish and Wildlife, Department of",452618177.18,3312,6454,0.003007792537622294,0.9500047623044784,B,california_history,accepted_observation_subset_not_statewide_total
+"Motor Vehicles, Department of",448844696.41,2683,4091,0.0029827165511217488,0.9529874788556001,C,california_history,accepted_observation_subset_not_statewide_total
+"Child Support Services, Department of",428526763.64,1027,3665,0.0028476973900569596,0.9558351762456571,C,california_history,accepted_observation_subset_not_statewide_total
+"Energy Commission, California",397023148.47,402,821,0.0026383457921895876,0.9584735220378466,C,california_history,accepted_observation_subset_not_statewide_total
+"Personnel Administration, Department of",376630269.75,67,78,0.0025028285913188423,0.9609763506291655,C,california_history,accepted_observation_subset_not_statewide_total
+"Water Resources Control Board, State",352119349.54,1155,1344,0.002339945687770374,0.9633162963169359,C,california_history,accepted_observation_subset_not_statewide_total
+"Finance, Department of",315542890.46,329,631,0.002096883419792303,0.9654131797367282,C,california_history,accepted_observation_subset_not_statewide_total
+California Department of Technology,312433363.87,989,1342,0.002076219621154758,0.967489399357883,C,california_history,accepted_observation_subset_not_statewide_total
+"Food and Agriculture, Department of",299672405.04,2629,2638,0.001991418968691092,0.9694808183265741,C,california_history,accepted_observation_subset_not_statewide_total
+"Human Resources, California Department of",292312561.89,298,305,0.0019425104572332388,0.9714233287838073,C,california_history,accepted_observation_subset_not_statewide_total
+"Developmental Services, Department of",284485449.88,3034,7458,0.0018904967947650404,0.9733138255785724,C,california_history,accepted_observation_subset_not_statewide_total
+"Justice, Department of",270662881.25,3576,7026,0.0017986414056705984,0.975112466984243,C,california_history,accepted_observation_subset_not_statewide_total
+"Rehabilitation, Department of",247402970.15,2074,2278,0.0016440718577389972,0.976756538841982,C,california_history,accepted_observation_subset_not_statewide_total
+Air Resources Board,225628897.15,1874,2994,0.001499376179162664,0.9782559150211446,C,california_history,accepted_observation_subset_not_statewide_total
+California Technology Agency,209800442.96,1682,2065,0.001394191039026666,0.9796501060601713,C,california_history,accepted_observation_subset_not_statewide_total
+"Peace Officer Standards and Training, Commission on",208123959.36,305,393,0.001383050269354217,0.9810331563295256,C,california_history,accepted_observation_subset_not_statewide_total
+"Veterans Affairs, Department of",192351466.07,3281,5001,0.0012782370072953813,0.9823113933368209,C,california_history,accepted_observation_subset_not_statewide_total
+"Controller, State",169983383.44,442,876,0.0011295939447595231,0.9834409872815805,C,california_history,accepted_observation_subset_not_statewide_total
+"Statewide Health Planning & Development, Office of",169309999.23,6303,7504,0.001125119091331387,0.9845661063729119,C,california_history,accepted_observation_subset_not_statewide_total
+"Mental Health, Department of",163604348.51999998,299,674,0.001087203217658924,0.9856533095905707,C,california_history,accepted_observation_subset_not_statewide_total
+"Equalization, Board of",163308603.57,1738,1796,0.0010852378978849996,0.9867385474884557,C,california_history,accepted_observation_subset_not_statewide_total
+"Toxic Substances Control, Department of",155791496.41,1036,1052,0.001035284316786635,0.9877738318052424,C,california_history,accepted_observation_subset_not_statewide_total
+Children and Families Commission,151146028.27,168,531,0.0010044136953451604,0.9887782455005876,C,california_history,accepted_observation_subset_not_statewide_total
+"Boating and Waterways, Department of",144334073.64,188,397,0.0009591460783210488,0.9897373915789086,C,california_history,accepted_observation_subset_not_statewide_total
+Secretary of State,129784113.78,490,909,0.0008624569418787714,0.9905998485207874,C,california_history,accepted_observation_subset_not_statewide_total
+"Traffic Safety, Office of",126015290.5,17,17,0.0008374119058887717,0.9914372604266762,C,california_history,accepted_observation_subset_not_statewide_total
+California Emergency Management Agency,122279277.23,1167,3023,0.0008125849029080784,0.9922498453295843,C,california_history,accepted_observation_subset_not_statewide_total
+"Industrial Relations, Department of",109771890.44,2408,6867,0.0007294693177442133,0.9929793146473285,C,california_history,accepted_observation_subset_not_statewide_total
+Military Department,102046088.49,1077,1086,0.0006781288930243362,0.9936574435403528,C,california_history,accepted_observation_subset_not_statewide_total
+"Resources Recycle and Recovery, Department of",99033688.25,282,321,0.000658110530044185,0.994315554070397,C,california_history,accepted_observation_subset_not_statewide_total
+"Conservation, Department of",68869961.71,410,948,0.000457662920628333,0.9947732169910253,C,california_history,accepted_observation_subset_not_statewide_total
+"Alcohol and Drug Programs, Department of",62085271.76,43,98,0.0004125764861222451,0.9951857934771475,C,california_history,accepted_observation_subset_not_statewide_total
+"Insurance, Department of",61432356.08,632,692,0.00040823765262192903,0.9955940311297694,C,california_history,accepted_observation_subset_not_statewide_total
+"Victim Compensation and Government Claims Board, California",61129935.63,207,265,0.00040622797201563595,0.996000259101785,C,california_history,accepted_observation_subset_not_statewide_total
+Emergency Medical Services Authority,55572961.129999995,116,120,0.00036930009930624983,0.9963695592010913,C,california_history,accepted_observation_subset_not_statewide_total
+"Coastal Conservancy, State",53048729.74,197,547,0.00035252577445394825,0.9967220849755453,C,california_history,accepted_observation_subset_not_statewide_total
+"Financial Institutions, Department of",46857346.13,99,114,0.0003113820503204186,0.9970334670258657,C,california_history,accepted_observation_subset_not_statewide_total
+"Treasurer, Office of the State",44219603.57,481,499,0.00029385340744185034,0.9973273204333075,C,california_history,accepted_observation_subset_not_statewide_total
+District Agricultural Association,43037711.15,553,619,0.0002859993543340039,0.9976133197876416,C,california_history,accepted_observation_subset_not_statewide_total
+Delta Stewardship Council,41979302.19,555,587,0.0002789658883086778,0.9978922856759502,C,california_history,accepted_observation_subset_not_statewide_total
+"Pesticide Regulation, Department of",41357147.4,3110,8134,0.00027483147075994607,0.9981671171467101,C,california_history,accepted_observation_subset_not_statewide_total
+"Managed Health Care, Department of",40565468.2,243,592,0.0002695705092917463,0.9984366876560019,C,california_history,accepted_observation_subset_not_statewide_total
+"Science Center, California",32937531.49,295,306,0.00021888043038961478,0.9986555680863916,C,california_history,accepted_observation_subset_not_statewide_total
+"Planning and Research, Governor's Office of",26664723.36,78,83,0.00017719561428058964,0.9988327637006721,C,california_history,accepted_observation_subset_not_statewide_total
+"Conservation Corps, California",22527145.09,738,1656,0.00014970008345177593,0.9989824637841239,C,california_history,accepted_observation_subset_not_statewide_total
+Student Aid Commission,18322446.18,715,725,0.00012175851450454137,0.9991042222986285,C,california_history,accepted_observation_subset_not_statewide_total
+"Library, California State",15257273.61,231,246,0.00010138946251460302,0.9992056117611431,C,california_history,accepted_observation_subset_not_statewide_total
+"Alcoholic Beverage Control, Department of",12841286.53,288,504,8.533445571949153e-05,0.9992909462168625,C,california_history,accepted_observation_subset_not_statewide_total
+Business Oversight,9426337.59,186,240,6.264102789012632e-05,0.9993535872447527,C,california_history,accepted_observation_subset_not_statewide_total
+"Housing and Community Development, Department of",9264526.54,214,215,6.156574171464142e-05,0.9994151529864673,C,california_history,accepted_observation_subset_not_statewide_total
+"Personnel Board, State",8540491.33,34,39,5.675429619298327e-05,0.9994719072826603,C,california_history,accepted_observation_subset_not_statewide_total
+"Tahoe Conservancy, California",8369835.9,64,88,5.5620236283907655e-05,0.9995275275189442,C,california_history,accepted_observation_subset_not_statewide_total
+"Coastal Commission, California",7890870.14,178,178,5.2437355632316686e-05,0.9995799648745766,C,california_history,accepted_observation_subset_not_statewide_total
+Governor's Office of Business and Economic Development,6350931.36,70,102,4.22039699566964e-05,0.9996221688445333,C,california_history,accepted_observation_subset_not_statewide_total
+"Environmental Health Hazard Assessment, Office of",5985791.79,43,416,3.977750074001744e-05,0.9996619463452733,C,california_history,accepted_observation_subset_not_statewide_total
+"Corporations, Department of",5251481.6,57,95,3.4897774690253293e-05,0.9996968441199635,C,california_history,accepted_observation_subset_not_statewide_total
+"Fair Employment and Housing, Department of",4611470.51,85,754,3.064469631745971e-05,0.9997274888162809,C,california_history,accepted_observation_subset_not_statewide_total
+"Horse Racing Board, California",4271329.11,71,94,2.8384347935009452e-05,0.999755873164216,C,california_history,accepted_observation_subset_not_statewide_total
+"Exposition and State Fair, California",3627097.99,129,140,2.4103226113272606e-05,0.9997799763903292,C,california_history,accepted_observation_subset_not_statewide_total
+Santa Monica Mountains Conservancy,3280000.0,16,16,2.179664896550924e-05,0.9998017730392947,C,california_history,accepted_observation_subset_not_statewide_total
+"Teacher Credentialing, Commission on",2930258.27,106,121,1.9472503319960484e-05,0.9998212455426146,C,california_history,accepted_observation_subset_not_statewide_total
+Agricultural Labor Relations Board,2566062.1,73,101,1.7052303297987032e-05,0.9998382978459126,C,california_history,accepted_observation_subset_not_statewide_total
+State Lands Commission,2401951.4699999997,53,69,1.596173567798137e-05,0.9998542595815906,C,california_history,accepted_observation_subset_not_statewide_total
+"Natural Resources Agency, California",2375347.69,19,23,1.5784945051818066e-05,0.9998700445266424,C,california_history,accepted_observation_subset_not_statewide_total
+Board of State and Community Corrections,1867183.72,15,20,1.2408032956998076e-05,0.9998824525595994,C,california_history,accepted_observation_subset_not_statewide_total
+"Arts Council, California",1834206.73,19,55,1.2188890312190422e-05,0.9998946414499116,C,california_history,accepted_observation_subset_not_statewide_total
+"Public Defender, State",1805435.1,76,108,1.1997693629484472e-05,0.999906639143541,C,california_history,accepted_observation_subset_not_statewide_total
+Sierra Nevada Conservancy,1621278.54,45,45,1.0773914393808941e-05,0.9999174130579349,C,california_history,accepted_observation_subset_not_statewide_total
+California Natural Resources Agency,1500000.0,1,1,9.967979709836542e-06,0.9999273810376448,C,california_history,accepted_observation_subset_not_statewide_total
+San Francisco Bay Conservation and Development Commission,1495647.16,32,54,9.939053695969765e-06,0.9999373200913407,C,california_history,accepted_observation_subset_not_statewide_total
+"Real Estate, Department of",1424745.0,37,37,9.467886167794043e-06,0.9999467879775086,C,california_history,accepted_observation_subset_not_statewide_total
+"Inspector General, Office of the",1372483.67,50,122,9.120592916427995e-06,0.999955908570425,C,california_history,accepted_observation_subset_not_statewide_total
+Fair Political Practices Commission,1362571.56,38,38,9.054723775520217e-06,0.9999649632942006,C,california_history,accepted_observation_subset_not_statewide_total
+Public Employment Relations Board,949231.34,164,417,6.307945824707301e-06,0.9999712712400253,C,california_history,accepted_observation_subset_not_statewide_total
+"Gambling Control Commission, California",802076.91,32,120,5.3300575764055935e-06,0.9999766012976017,C,california_history,accepted_observation_subset_not_statewide_total
+"Administrative Law, Office of",647368.01,25,26,4.30196745898484e-06,0.9999809032650606,C,california_history,accepted_observation_subset_not_statewide_total
+Education Audit Appeals Panel,555045.35,15,30,3.688453857892748e-06,0.9999845917189185,C,california_history,accepted_observation_subset_not_statewide_total
+"Independent Living Council, State",540784.78,36,37,3.5936878096189457e-06,0.9999881854067282,C,california_history,accepted_observation_subset_not_statewide_total
+Governor's Office,412472.97000000003,68,75,2.741014797210678e-06,0.9999909264215254,C,california_history,accepted_observation_subset_not_statewide_total
+"African American Museum, California",409288.58,27,27,2.719853507271874e-06,0.9999936462750327,C,california_history,accepted_observation_subset_not_statewide_total
+San Diego River Conservancy,332864.20999999996,4,4,2.2119891276071797e-06,0.9999958582641604,C,california_history,accepted_observation_subset_not_statewide_total
+"Summer School for the Arts, California State",206980.0,30,33,1.3754482935613117e-06,0.999997233712454,C,california_history,accepted_observation_subset_not_statewide_total
+"State Mandates, Commission on",180547.55,64,122,1.1997962100404657e-06,0.999998433508664,C,california_history,accepted_observation_subset_not_statewide_total
+CA Commission on Disability Access,87335.75,2,2,5.803739892955712e-07,0.9999990138826533,C,california_history,accepted_observation_subset_not_statewide_total
+"Transportation Commission, California",77844.91,8,12,5.173043222627011e-07,0.9999995311869756,C,california_history,accepted_observation_subset_not_statewide_total
+Building Standards Commission,31180.5,2,2,2.072043942283722e-07,0.9999997383913698,C,california_history,accepted_observation_subset_not_statewide_total
+Colorado River Board of California,25000.0,2,2,1.6613299516394236e-07,0.9999999045243649,C,california_history,accepted_observation_subset_not_statewide_total
+"Business, Consumer Services and Housing Agency",5931.11,1,8,3.9414122757872404e-08,0.9999999439384877,C,california_history,accepted_observation_subset_not_statewide_total
+State and Consumer Services Agency,5002.0,1,1,3.323988967240159e-08,0.9999999771783773,C,california_history,accepted_observation_subset_not_statewide_total
+Citizens Redistricting Commission,3434.24,1,1,2.2821623092472698e-08,1.0000000000000004,C,california_history,accepted_observation_subset_not_statewide_total

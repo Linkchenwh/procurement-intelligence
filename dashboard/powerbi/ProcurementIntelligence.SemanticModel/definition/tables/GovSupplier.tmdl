@@ -1,0 +1,35 @@
+table GovSupplier
+	lineageTag: 61f2541f-5f9f-5eae-89cb-4c5478595a9f
+
+	column supplier_key
+		dataType: string
+		lineageTag: 2efd8584-7498-58a8-a0dc-f06c96c3818e
+		summarizeBy: none
+		sourceColumn: supplier_key
+
+	column supplier_label
+		dataType: string
+		lineageTag: bf0916c2-a39a-5e19-bfc1-50649bff74b6
+		summarizeBy: none
+		sourceColumn: supplier_label
+
+	column name_variants
+		dataType: int64
+		formatString: #,0
+		lineageTag: 62a47c22-e59b-5bef-9fa5-15699808926f
+		summarizeBy: none
+		sourceColumn: name_variants
+
+	partition GovSupplier = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\GovSupplier.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"supplier_key", type text}, {"supplier_label", type text}, {"name_variants", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

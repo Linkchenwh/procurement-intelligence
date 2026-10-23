@@ -1,0 +1,112 @@
+table GovFact
+	lineageTag: 2668155b-853f-5b38-8b46-ea9f5b906774
+
+	measure 'Gov Observed Amount' = SUM(GovFact[amount])
+		formatString: #,0.00
+		displayFolder: Audited metrics
+		lineageTag: e3bf5930-9f48-4e30-871f-b4734bbe7711
+
+	measure 'Gov Observed Orders' = DISTINCTCOUNT(GovFact[order_id])
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: ea4151f2-796a-491e-8ead-cdebd2577fff
+
+	measure 'Gov Observation Rows' = COUNTROWS(GovFact)
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 89385f95-d076-4779-9177-36f348743ecc
+
+	measure 'Gov Known Suppliers' = CALCULATE(DISTINCTCOUNT(GovFact[supplier_key]), GovFact[supplier_key] <> "UNKNOWN")
+		formatString: #,0
+		displayFolder: Audited metrics
+		lineageTag: 16a8a235-dfca-41cc-8253-62216280e1dd
+
+	measure 'Gov Top5 Share' = VAR S = ALLSELECTED(GovSupplier) VAR A = ADDCOLUMNS(S, "SupplierAmount", CALCULATE([Gov Observed Amount])) RETURN DIVIDE(SUMX(TOPN(5,A,[SupplierAmount],DESC,GovSupplier[supplier_key],ASC),[SupplierAmount]),CALCULATE([Gov Observed Amount],S))
+		formatString: 0.0%
+		displayFolder: Audited metrics
+		lineageTag: 5e171258-b559-4196-b333-a7d6575dbcd5
+
+	measure 'Gov HHI' = VAR S = ALLSELECTED(GovSupplier) VAR A = CALCULATE([Gov Observed Amount],S) RETURN IF(A>0,SUMX(S,POWER(DIVIDE(CALCULATE([Gov Observed Amount]),A),2))*10000)
+		formatString: 0.00
+		displayFolder: Audited metrics
+		lineageTag: 8e5975bb-bc03-4406-afe9-53df7650c84a
+
+	measure 'Gov Dated Coverage' = DIVIDE(CALCULATE([Gov Observed Amount],NOT ISBLANK(GovFact[purchase_date])),[Gov Observed Amount])
+		formatString: 0.0%
+		displayFolder: Audited metrics
+		lineageTag: 9780450e-db79-41f9-9d02-12e3ce0bd855
+
+	column row_id
+		dataType: int64
+		formatString: #,0
+		lineageTag: aa811044-afc1-5027-bf9a-b1fec7138a6c
+		summarizeBy: none
+		sourceColumn: row_id
+
+	column order_key
+		dataType: string
+		lineageTag: 4bbbff4d-661d-53c9-876d-39be18ee1582
+		summarizeBy: none
+		sourceColumn: order_key
+
+	column supplier_key
+		dataType: string
+		lineageTag: 4a15e29d-f44d-59dd-b26d-bca7b1e68a88
+		summarizeBy: none
+		sourceColumn: supplier_key
+
+	column purchase_date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: 21bf7701-f332-5f1e-996a-0769cccc03f5
+		summarizeBy: none
+		sourceColumn: purchase_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column department
+		dataType: string
+		lineageTag: 6776c12f-5bca-5ef3-ae53-c494aa98afaf
+		summarizeBy: none
+		sourceColumn: department
+
+	column fiscal_year
+		dataType: string
+		lineageTag: 268da68b-2419-56a3-afa0-9ea9b8229130
+		summarizeBy: none
+		sourceColumn: fiscal_year
+
+	column acquisition_type
+		dataType: string
+		lineageTag: 558a5bae-727d-57b2-b9f5-09d5bcc1e52d
+		summarizeBy: none
+		sourceColumn: acquisition_type
+
+	column amount
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: a31ebe4f-6a4d-5b3f-b914-178695b87b97
+		summarizeBy: none
+		sourceColumn: amount
+
+	column order_id
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 58195d50-af06-4a98-958d-6e1598401912
+		summarizeBy: none
+		sourceColumn: order_id
+
+	partition GovFact = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\GovFact.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"row_id", Int64.Type}, {"order_key", type text}, {"order_id", Int64.Type}, {"supplier_key", type text}, {"purchase_date", type date}, {"department", type text}, {"fiscal_year", type text}, {"acquisition_type", type text}, {"amount", Currency.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

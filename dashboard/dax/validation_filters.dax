@@ -1,0 +1,10 @@
+EVALUATE
+ROW(
+    "Electronics Orders", CALCULATE([Perf Noncancelled Orders], TREATAS({"Electronics"}, PerfCategory[Item_Category])),
+    "Alpha Electronics Orders", CALCULATE([Perf Noncancelled Orders], TREATAS({"Electronics"}, PerfCategory[Item_Category]), TREATAS({"Alpha_Inc"}, PerfSupplier[Supplier])),
+    "Alpha Electronics Cycle", CALCULATE([Perf Delivery Days], TREATAS({"Electronics"}, PerfCategory[Item_Category]), TREATAS({"Alpha_Inc"}, PerfSupplier[Supplier])),
+    "MRO Orders", CALCULATE([Perf Noncancelled Orders], TREATAS({"MRO"}, PerfCategory[Item_Category])),
+    "Government Amount With Unrelated Perf Filter", CALCULATE([Gov Observed Amount], TREATAS({"Electronics"}, PerfCategory[Item_Category])),
+    "Market Min With Unrelated Perf Filter", CALCULATE([Market Minimum Listed Price SameCurrency], TREATAS({"Electronics"}, PerfCategory[Item_Category])),
+    "Market Scenario With Unrelated Brand Filter", CALCULATE(COUNTROWS(MarketScenario), TREATAS({"一星蓝旗舰"}, MarketQuotes[brand]))
+)

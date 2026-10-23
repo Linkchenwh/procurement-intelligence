@@ -1,0 +1,16 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    PerfCategory[Item_Category],
+    PerfSupplier[Supplier],
+    "orders", [Perf Noncancelled Orders],
+    "delivered_orders", [Perf Delivered Orders],
+    "delivery_samples", [Perf Delivery Samples],
+    "delivery_days", [Perf Delivery Days],
+    "delivery_coverage", [Perf Delivery Coverage],
+    "compliance_samples", [Perf Compliance Samples],
+    "compliance_rate", [Perf Recorded Compliance Rate],
+    "quality_samples", [Perf Quality Samples],
+    "quality_record_coverage", [Perf Quality Record Coverage],
+    "observed_defective_units", [Perf Observed Defects]
+)
+ORDER BY PerfCategory[Item_Category], PerfSupplier[Supplier]

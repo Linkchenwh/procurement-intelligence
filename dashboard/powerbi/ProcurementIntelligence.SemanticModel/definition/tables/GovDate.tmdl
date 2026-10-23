@@ -1,0 +1,38 @@
+table GovDate
+	lineageTag: 0bb819ad-45d6-5d18-af9a-ec0a3def06ff
+
+	column date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: f6358af7-c8eb-54c1-b56a-75a76ca8338e
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column month
+		dataType: string
+		lineageTag: b6148060-8c99-53c9-9f4c-7f7ee3853082
+		summarizeBy: none
+		sourceColumn: month
+
+	column year
+		dataType: int64
+		formatString: #,0
+		lineageTag: d3f9b776-9488-588b-8c65-e257a9c08215
+		summarizeBy: none
+		sourceColumn: year
+
+	partition GovDate = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\GovDate.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"date", type date}, {"month", type text}, {"year", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

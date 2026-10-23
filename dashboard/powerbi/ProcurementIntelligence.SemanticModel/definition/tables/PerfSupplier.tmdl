@@ -1,0 +1,22 @@
+table PerfSupplier
+	lineageTag: 322a6bf4-933a-5987-92af-c7ed07a79814
+
+	column Supplier
+		dataType: string
+		lineageTag: 37770d46-c3e0-50e6-94ab-3631b42dde2b
+		summarizeBy: none
+		sourceColumn: Supplier
+
+	partition PerfSupplier = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "\dashboard\powerbi\input\PerfSupplier.csv"), [Delimiter=",", Columns=1, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Supplier", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

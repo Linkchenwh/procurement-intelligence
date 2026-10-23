@@ -1,0 +1,12 @@
+﻿field,missing,distinct_nonnull,raw_dtype,source_domain
+PO_ID,0,777,string,performance_practice
+Supplier,0,5,string,performance_practice
+Order_Date,0,476,string,performance_practice
+Delivery_Date,87,449,string,performance_practice
+Item_Category,0,5,string,performance_practice
+Order_Status,0,4,string,performance_practice
+Quantity,0,623,string,performance_practice
+Unit_Price,0,747,string,performance_practice
+Negotiated_Price,0,752,string,performance_practice
+Defective_Units,136,202,string,performance_practice
+Compliance,0,2,string,performance_practice

@@ -1,0 +1,6 @@
+﻿Supplier,amount,orders,share,cumulative_share,abc,source_domain
+Epsilon_Group,9192269.28,152,0.21999916235714506,0.21999916235714506,A,performance_practice
+Beta_Supplies,9053520.28,142,0.21667847376022753,0.4366776361173726,A,performance_practice
+Delta_Logistics,8354882.54,155,0.1999579325196114,0.636635568636984,A,performance_practice
+Gamma_Co,8132921.2,137,0.19464571772386843,0.8312812863608524,A,performance_practice
+Alpha_Inc,7049607.97,128,0.16871871363914764,1.0,B,performance_practice

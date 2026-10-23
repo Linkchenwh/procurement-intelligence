@@ -1,0 +1,5 @@
+EVALUATE
+TOPN(10,
+    SUMMARIZECOLUMNS(GovSupplier[supplier_key], GovSupplier[supplier_label], "amount", [Gov Observed Amount]),
+    [amount], DESC, GovSupplier[supplier_key], ASC)
+ORDER BY [amount] DESC, GovSupplier[supplier_key] ASC

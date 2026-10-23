@@ -1,0 +1,184 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "market_scenario",
+  "position": {
+    "x": 24,
+    "y": 610,
+    "width": 1232,
+    "height": 215,
+    "z": 634,
+    "tabOrder": 634
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "product_name"
+                }
+              },
+              "queryRef": "MarketScenario.product_name",
+              "nativeQueryRef": "product_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "requested_reams"
+                }
+              },
+              "queryRef": "MarketScenario.requested_reams",
+              "nativeQueryRef": "requested_reams"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "purchase_units"
+                }
+              },
+              "queryRef": "MarketScenario.purchase_units",
+              "nativeQueryRef": "purchase_units"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "goods_reference_cost"
+                }
+              },
+              "queryRef": "MarketScenario.goods_reference_cost",
+              "nativeQueryRef": "goods_reference_cost"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "total_cost"
+                }
+              },
+              "queryRef": "MarketScenario.total_cost",
+              "nativeQueryRef": "total_cost"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "budget_difference"
+                }
+              },
+              "queryRef": "MarketScenario.budget_difference",
+              "nativeQueryRef": "budget_difference"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarketScenario"
+                    }
+                  },
+                  "Property": "limitations"
+                }
+              },
+              "queryRef": "MarketScenario.limitations",
+              "nativeQueryRef": "limitations"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'100包假设需求；参考货品金额不等于到货总成本'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimSun'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

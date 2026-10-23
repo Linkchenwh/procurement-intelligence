@@ -1,0 +1,195 @@
+{
+  "generated_inputs": [
+    {
+      "name": "GovFact",
+      "rows": 335550,
+      "columns": [
+        "row_id",
+        "order_key",
+        "order_id",
+        "supplier_key",
+        "purchase_date",
+        "department",
+        "fiscal_year",
+        "acquisition_type",
+        "amount"
+      ]
+    },
+    {
+      "name": "GovSupplier",
+      "rows": 25184,
+      "columns": [
+        "supplier_key",
+        "supplier_label",
+        "name_variants"
+      ]
+    },
+    {
+      "name": "GovDepartment",
+      "rows": 111,
+      "columns": [
+        "department"
+      ]
+    },
+    {
+      "name": "GovType",
+      "rows": 5,
+      "columns": [
+        "acquisition_type"
+      ]
+    },
+    {
+      "name": "GovDate",
+      "rows": 1095,
+      "columns": [
+        "date",
+        "month",
+        "year"
+      ]
+    },
+    {
+      "name": "PerfFact",
+      "rows": 777,
+      "columns": [
+        "PO_ID",
+        "Supplier",
+        "Order_Date",
+        "Delivery_Date",
+        "Item_Category",
+        "Order_Status",
+        "Quantity",
+        "Unit_Price",
+        "Negotiated_Price",
+        "Defective_Units",
+        "Compliance",
+        "delivery_days",
+        "observed_defective_units",
+        "compliant",
+        "amount",
+        "baseline_amount",
+        "valid_order",
+        "delivered_order",
+        "source_domain"
+      ]
+    },
+    {
+      "name": "PerfSupplier",
+      "rows": 5,
+      "columns": [
+        "Supplier"
+      ]
+    },
+    {
+      "name": "PerfCategory",
+      "rows": 5,
+      "columns": [
+        "Item_Category"
+      ]
+    },
+    {
+      "name": "MarketQuotes",
+      "rows": 10,
+      "columns": [
+        "quote_id",
+        "brand",
+        "product_name",
+        "sku",
+        "manufacturer",
+        "seller",
+        "contract_supplier",
+        "channel",
+        "paper_size",
+        "gsm",
+        "sheets_per_ream",
+        "reams_per_box",
+        "price",
+        "currency",
+        "quote_unit",
+        "min_order_units",
+        "max_order_units",
+        "tax_status",
+        "shipping_cost",
+        "shipping_terms",
+        "tax_terms",
+        "region",
+        "lead_time_days",
+        "collected_at",
+        "url",
+        "attributes",
+        "data_status",
+        "notes",
+        "evidence_file",
+        "evidence_sha256",
+        "source_domain",
+        "packaging_conflict",
+        "review_note",
+        "reams_per_unit",
+        "price_per_500",
+        "spec_comparable",
+        "quote_age_days",
+        "fresh_observation",
+        "source_link_present",
+        "evidence_note"
+      ]
+    },
+    {
+      "name": "MarketScenario",
+      "rows": 10,
+      "columns": [
+        "quote_id",
+        "brand",
+        "product_name",
+        "sku",
+        "manufacturer",
+        "seller",
+        "contract_supplier",
+        "channel",
+        "paper_size",
+        "gsm",
+        "sheets_per_ream",
+        "reams_per_box",
+        "price",
+        "currency",
+        "quote_unit",
+        "min_order_units",
+        "max_order_units",
+        "tax_status",
+        "shipping_cost",
+        "shipping_terms",
+        "tax_terms",
+        "region",
+        "lead_time_days",
+        "collected_at",
+        "url",
+        "attributes",
+        "data_status",
+        "notes",
+        "evidence_file",
+        "evidence_sha256",
+        "source_domain",
+        "packaging_conflict",
+        "review_note",
+        "reams_per_unit",
+        "price_per_500",
+        "spec_comparable",
+        "quote_age_days",
+        "fresh_observation",
+        "source_link_present",
+        "evidence_note",
+        "requested_reams",
+        "purchase_units",
+        "supplied_reams",
+        "goods_reference_cost",
+        "total_cost",
+        "budget_difference",
+        "scenario_comparable",
+        "limitations",
+        "calculation_basis",
+        "rank"
+      ]
+    }
+  ],
+  "desktop_validation": "Input export only; consult desktop_validation.json for actual engine and visual verification",
+  "native_project": "PBIP exists; existence is not verification",
+  "performance_domain": "available"
+}
